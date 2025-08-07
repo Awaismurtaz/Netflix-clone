@@ -1,0 +1,40 @@
+
+$dark-gray:#2D2D2D;
+$black:#000000;
+$red:#E50914;
+$white:#FFFFFF;
+$light-gray:#B3B3B3;
+$gray-400:#414141;
+$light-black:#161616;
+$black-14:#141414;
+$gray-e5:#e5e5e5;
+$gray-b3:#b3b3b3;
+$gray-44:#444;
+
+
+.fs_64{
+    font-size: clamp(38px, 5vw, 64px);
+}
+.fs_22{
+    font-size : clamp(12px, 4vw, 22px);
+}
+.fs_18{
+    font-size:clamp(12px, 4vw, 18px);
+}
+.text--light__gray{
+    color: $light-gray;
+}
+
+.bg--black{
+background-color: $black;
+}
+.bg--light__black{
+    background-color: $light-black
+}
+
+.action_icon{
+width: 20px;
+}
+.icon_white{
+filter: invert(1) brightness(1);
+}

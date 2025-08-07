@@ -1,0 +1,14 @@
+ <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="card__icon"
+                            width="24"
+                            height="24"
+                            fill="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M2.469 6.969a.75.75 0 011.062 0L12 15.439l8.469-8.47a.75.75 0 111.062 1.062l-9 9a.75.75 0 01-1.062 0l-9-9a.75.75 0 010-1.062z"
+                              clip-rule="evenodd"
+                            />
+                          </svg>

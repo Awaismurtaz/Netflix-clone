@@ -1,0 +1,92 @@
+.btn--danger {
+  background-color: $red;
+  &:hover {
+    transition-timing-function: cubic-bezier(0.32, 0.94, 0.6, 1);
+    background: rgb(193, 17, 25);
+  }
+}
+
+.btn--lg {
+  padding: 10.5px 20px;
+}
+
+.custom__btn_danger {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.btn__custom--light {
+  border: 0px;
+  cursor: pointer;
+  padding: 7px 20px;
+  border-radius: 0.25rem;
+  background: rgba(128, 128, 128, 0.4);
+  color: rgb(255, 255, 255);
+  &:hover {
+    transition-timing-function: cubic-bezier(0.32, 0.94, 0.6, 1);
+    background: rgba(128, 128, 128, 0.3);
+  }
+}
+.custom_btn--lg {
+  padding: 12.6px 30px;
+  border: 0;
+  border-radius: 4px;
+}
+
+.custom_btn {
+  padding: 9px 24px;
+  border: 0;
+  border-radius: 4px;
+}
+
+.btn--white {
+  background-color: $white;
+  color: $black;
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.75);
+  }
+}
+
+.btn--info {
+  background-color: rgba(109, 109, 110, 0.7);
+  color: white;
+  &:hover {
+    background-color: rgba(109, 109, 110, 0.4);
+  }
+}
+
+.play_btn {
+  background: $white;
+  color: $black-14;
+  width: 36px;
+    height: 36px;
+    padding: 10px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border:0;
+  transition: all 250ms;
+  &:hover{
+    background: rgba(255, 255, 255, 0.75);
+  }
+}
+  .action_button {
+    width: 36px;
+    height: 36px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: all 250ms;
+    &:hover{
+      background:rgba(99, 97, 97, 0.219);
+    }
+  }
+
+  .btn--transparent {
+    background: transparent;
+  }
+  .btn--circle {
+    border-radius: 50%;
+  }

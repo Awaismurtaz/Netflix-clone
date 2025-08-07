@@ -1,0 +1,83 @@
+
+.custom_field_container {
+    position: relative;
+  .custom_field {
+    background: rgba(22, 22, 22, 0.7);
+    border-radius: 0.25rem;
+    border: 0.0625rem solid rgba(128, 128, 128, 0.7);
+    color: white !important;
+    padding: 1.5rem 1rem 0.5rem;
+    height: 3.5rem;
+    width: 100%;
+  }
+
+  .custom_field:focus {
+    box-shadow: none;
+    background: rgba(22, 22, 22, 0.7);
+    outline: none;
+    border: 1px solid white;
+  }
+
+  .custom_label {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ADB7B7;
+    transition: all 0.2s ease;
+    pointer-events: none;
+  }
+
+  .custom_field:focus + .custom_label,
+  .custom_field:not(:placeholder-shown) + .custom_label {
+    top: 0.5rem;
+    font-size: 0.75rem;
+    transform: translateY(0);
+    color: white;
+  }
+}
+
+.custom--select{
+  &:focus{
+    box-shadow: none;
+  }
+}
+
+
+.custom__checkbox {
+  border-radius: 2px;
+  border: 1px solid $light-gray; 
+  background-color: transparent; 
+  width: 18px;
+  height: 18px;
+  position: relative;
+  appearance: none; 
+  cursor: pointer;
+
+  &:focus {
+    box-shadow: none; 
+    outline: none; 
+    border: 1px solid $light-gray;
+  }
+
+  &:checked {
+    background-color: $white; 
+    border-color: $light-gray; 
+
+    &:after {
+      content: '✔'; 
+      color: $black; 
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 14px;
+      line-height: 1;
+    }
+  }
+}
+
+.custom__checkbox + label {
+  margin-left: 8px;
+  cursor: pointer;
+}

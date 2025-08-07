@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
+    <link rel="stylesheet" href="./style/main.css" />
+  </head>
+  <body>
+    <section>
+      <div class="hero__section auth__hero__section">
+        <div class="landing__navbar">
+          <div class="container">
+            <nav class="position-relative z-2">
+              <div class="d-flex justify-content-between align-items-center">
+                <a href="./index.html">
+                  <img
+                    src="./images/b-netflix-text.svg"
+                    alt="netflix logo"
+                    class="landing__navbar__logo"
+                  />
+                </a>
+              </div>
+            </nav>
+          </div>
+        </div>
+        <div class="container">
+          <div class="auth__content_wrap py-5">
+          <div class="auth__main__box">
+            <div class="heading_box mb-4">
+              <h2 class="fw-semibold text-white">Sign In</h2>
+            </div>
+            <form>
+              <div class="custom_field_container mb-3">
+                <input
+                  type="text"
+                  class="custom_field"
+                  id="email"
+                  placeholder=" "
+                  required
+                />
+                <label for="email" class="custom_label"
+                  >Email or mobile number</label
+                >
+              </div>
+              <div class="custom_field_container mb-3">
+                <input
+                  type="password"
+                  class="custom_field"
+                  id="email"
+                  placeholder=" "
+                  required
+                />
+                <label for="email" class="custom_label">Password</label>
+              </div>
+              <button
+                class="btn btn-danger btn-md btn--danger w-100 rounded-1 mb-3"
+              >
+                Sign in
+              </button>
+              <span class="text--light__gray text-center d-block mb-3 fw-light">
+                OR
+              </span>
+              <button class="btn__custom--light w-100 rounded-1 mb-3">
+                Use a Sign-In Code
+              </button>
+              <a
+                href="#"
+                class="forgot__passwrod text-white fw-light text-center d-block mb-3"
+              >
+                <small> Forgot Password? </small>
+              </a>
+
+              <div class="form-check mb-3">
+                <input type="checkbox" class="form-check-input custom__checkbox" id="rememberMe" />
+                <label class="form-check-label text-white fw-light" for="rememberMe">
+                  Remember me
+                </label>
+              </div>
+              <small class="text--light__gray fw-light  d-block">
+                New to Netflix? <a href="./index.html" class="text-decoration-none signup__link">Sign up now</a>
+              </small>
+              <br>
+              <small class="text--light__gray fw-light ">
+                This page is protected by Google reCAPTCHA to ensure you're not a bot.
+              </small>
+              <br>
+              <small>
+                <a href="#" class="text-decoration-none ">Learn more</a>.
+              </small>
+            </form>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer__wrap bg--light__black">
+      <div class="container">
+        <div class="footer__top mb-4">
+          <a href="#" class="footer__contact-link">Questions? Contact us.</a>
+        </div>
+        <div class="row footer__links">
+          <div class="col-6 col-md-3">
+            <ul class="footer__list">
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Cookie Preferences</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-3">
+            <ul class="footer__list">
+              <li><a href="#">Help Center</a></li>
+              <li><a href="#">Corporate Information</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-3">
+            <ul class="footer__list">
+              <li><a href="#">Terms of Use</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-3">
+            <ul class="footer__list">
+              <li><a href="#">Privacy</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
