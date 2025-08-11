@@ -28,2737 +28,547 @@
     <link rel="stylesheet" href="./style/main.css" />
   </head>
   <body>
-    <div class="overflow-x-hidden">
-      <section>
-        <div class="banner__wrap">
-          <div class="custom_header">
-            <nav class="navbar navbar-expand-lg site-header">
-              <div class="container-fluid px-5 custom_container">
-                <a class="navbar-brand" href="/">
-                  <img
-                    src="./images/b-netflix-text.svg"
-                    alt=""
-                    class="landing__navbar__logo"
-                  />
-                </a>
-                <button
-                  class="navbar-toggler"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#navbarSupportedContent"
-                  aria-controls="navbarSupportedContent"
-                  aria-expanded="false"
-                  aria-label="Toggle navigation"
-                >
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div
-                  class="collapse navbar-collapse"
-                  id="navbarSupportedContent"
-                >
-                  <ul class="navbar-nav ms-4 mb-2 mb-lg-0 custom_navbar_nav">
-                    <li class="nav-item custom_nav_item">
-                      <a class="nav-link custom_nav_link active" href="#"
-                        >Home</a
+
+    <section>
+      <div class="banner__wrap">
+        <div class="custom_header">
+          <nav class="navbar navbar-expand-lg site-header">
+            <div class="container-fluid px-5 custom_container">
+              <a class="navbar-brand" href="/">
+                <img
+                  src="./images/b-netflix-text.svg"
+                  alt=""
+                  class="landing__navbar__logo"
+                />
+              </a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-4 mb-2 mb-lg-0 custom_navbar_nav">
+                  <li class="nav-item custom_nav_item">
+                    <a class="nav-link custom_nav_link active" href="#">Home</a>
+                  </li>
+                  <li class="nav-item custom_nav_item">
+                    <a class="nav-link custom_nav_link" href="#">Series</a>
+                  </li>
+                  <li class="nav-item custom_nav_item">
+                    <a class="nav-link custom_nav_link" href="#">Movies</a>
+                  </li>
+                  <li class="nav-item custom_nav_item">
+                    <a class="nav-link custom_nav_link" href="#">Games</a>
+                  </li>
+                  <li class="nav-item custom_nav_item">
+                    <a class="nav-link custom_nav_link" href="#"
+                      >Top Trending</a
+                    >
+                  </li>
+                  <li class="nav-item custom_nav_item">
+                    <a class="nav-link custom_nav_link" href="#">My List</a>
+                  </li>
+                  <li class="nav-item custom_nav_item">
+                    <a class="nav-link custom_nav_link" href="#"
+                      >Explore by Language</a
+                    >
+                  </li>
+                </ul>
+                <div class="ms-auto">
+                  <div class="search-container">
+                    <div class="search_field_box">
+                      <input type="checkbox" id="search-toggle" hidden />
+                      <label for="search-toggle" class="search-icon">
+                        <i class="fa fa-search"></i>
+                      </label>
+                      <input
+                        type="text"
+                        class="custom_search_input"
+                        placeholder="Film, genre, acteur..."
+                      />
+                    </div>
+                    <div class="notification_dropdown text-white me-4">
+                      <i class="fa fa-bell-o fs-5"></i>
+                    </div>
+                    <div class="select_profile_dropdown">
+                      <div
+                        class="select_profile"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
                       >
-                    </li>
-                    <li class="nav-item custom_nav_item">
-                      <a class="nav-link custom_nav_link" href="#">Series</a>
-                    </li>
-                    <li class="nav-item custom_nav_item">
-                      <a class="nav-link custom_nav_link" href="#">Movies</a>
-                    </li>
-                    <li class="nav-item custom_nav_item">
-                      <a class="nav-link custom_nav_link" href="#">Games</a>
-                    </li>
-                    <li class="nav-item custom_nav_item">
-                      <a class="nav-link custom_nav_link" href="#"
-                        >Top Trending</a
-                      >
-                    </li>
-                    <li class="nav-item custom_nav_item">
-                      <a class="nav-link custom_nav_link" href="#">My List</a>
-                    </li>
-                    <li class="nav-item custom_nav_item">
-                      <a class="nav-link custom_nav_link" href="#"
-                        >Explore by Language</a
-                      >
-                    </li>
-                  </ul>
-                  <div class="ms-auto">
-                    <div class="search-container">
-                      <div class="search_field_box">
-                        <input type="checkbox" id="search-toggle" hidden />
-                        <label for="search-toggle" class="search-icon">
-                          <i class="fa fa-search"></i>
-                        </label>
-                        <input
-                          type="text"
-                          class="custom_search_input"
-                          placeholder="Film, genre, acteur..."
+                        <img
+                          src="./images/profile-4.png"
+                          alt=""
+                          class="user_profile"
                         />
                       </div>
-                      <div class="notification_dropdown text-white me-4">
-                        <i class="fa fa-bell-o fs-5"></i>
-                      </div>
-                      <div class="select_profile_dropdown">
-                        <div
-                          class="select_profile"
-                          data-bs-toggle="dropdown"
-                          aria-expanded="false"
-                        >
-                          <img
-                            src="./images/profile-4.png"
-                            alt=""
-                            class="user_profile"
-                          />
-                        </div>
-                        <ul class="dropdown-menu custom_dropdown_menu">
-                          <li class="dropdown-item custom_dropdown_item">
-                            Action
-                          </li>
-                          <li class="dropdown-item custom_dropdown_item">
-                            Another action
-                          </li>
-                          <li class="dropdown-item custom_dropdown_item">
-                            Something else here
-                          </li>
-                        </ul>
-                      </div>
+                      <ul class="dropdown-menu custom_dropdown_menu">
+                        <li class="dropdown-item custom_dropdown_item">
+                          <div
+                            class="select_profile_image_wrap d-flex justify-content-between gap-2 align-items-center"
+                          >
+                            <div class="d-flex align-items-center gap-2">
+                              <div class="select_profile_img">
+                                <img
+                                  src="./images/profile-2.png"
+                                  alt=""
+                                  class="user_profile"
+                                />
+                              </div>
+                              <span class="text-white small">Johan</span>
+                            </div>
+                            <span class="text--light__gray">
+                              <i class="fa fa-lock" aria-hidden="true"></i>
+                            </span>
+                          </div>
+                        </li>
+                        <li class="dropdown-item custom_dropdown_item">
+                          <div
+                            class="select_profile_image_wrap d-flex justify-content-between gap-2 align-items-center"
+                          >
+                            <div class="d-flex align-items-center gap-2">
+                              <div class="select_profile_img">
+                                <img
+                                  src="./images/profile-3.png"
+                                  alt=""
+                                  class="user_profile"
+                                />
+                              </div>
+                              <span class="text-white small">Johan</span>
+                            </div>
+                            <span class="text--light__gray">
+                              <i class="fa fa-lock" aria-hidden="true"></i>
+                            </span>
+                          </div>
+                        </li>
+                        <li class="dropdown-item custom_dropdown_item">
+                          <div
+                            class="select_profile_image_wrap d-flex justify-content-between gap-2 align-items-center"
+                          >
+                            <div class="d-flex align-items-center gap-2">
+                              <div class="select_profile_img">
+                                <img
+                                  src="./images/profile-1.png"
+                                  alt=""
+                                  class="user_profile"
+                                />
+                              </div>
+                              <span class="text-white small">Johan</span>
+                            </div>
+                            <span class="text--light__gray">
+                              <i class="fa fa-lock" aria-hidden="true"></i>
+                            </span>
+                          </div>
+                        </li>
+                        <li class="dropdown-item custom_dropdown_item">
+                          Another action
+                        </li>
+                        <li class="dropdown-item custom_dropdown_item">
+                          Something else here
+                        </li>
+                      </ul>
                     </div>
                   </div>
                 </div>
               </div>
-            </nav>
-          </div>
-          <div class="banner__poster">
-            <img src="./images/banner_image.webp" alt="" class="poster__img" />
-          </div>
-          <div class="container-fluid px-5 custom_container">
-            <div class="banner_content_box">
-              <div class="movie__title">
-                <img src="./images/title.webp" alt="title" class="img-fluid" />
-              </div>
-              <div class="banner_description">
-                <p class="text-white fw-medium pt-4 fs_22">
-                  Inspired by true events, this series follows the creative
-                  strategies of federal agents as they trace the source of a
-                  criminal network in Brazil and Paraguay.
-                </p>
-              </div>
-              <div class="banner_button_box pt-4">
-                <button class="custom_btn--lg btn--white">
-                  <img src="./images/play.svg" alt="" class="Play_icon" />
-                  <span class="fw-semibold ms-2 fs_18">Lecture</span>
-                </button>
-                <button class="custom_btn--lg btn--info ms-3">
-                  <img src="./images/info.svg" alt="" class="Play_icon" />
-                  <span class="fw-semibold ms-2 fs_18">Plus d'infos</span>
-                </button>
-              </div>
+            </div>
+          </nav>
+        </div>
+        <div class="banner__poster">
+          <img src="./images/banner_image.webp" alt="" class="poster__img" />
+        </div>
+        <div class="container-fluid px-5 custom_container">
+          <div class="banner_content_box">
+            <div class="movie__title">
+              <img src="./images/title.webp" alt="title" class="img-fluid" />
+            </div>
+            <div class="banner_description">
+              <p
+                class="text-white fw-medium pt-4 fs_22 banner_description_text"
+              >
+                Inspired by true events, this series follows the creative
+                strategies of federal agents as they trace the source of a
+                criminal network in Brazil and Paraguay.
+              </p>
+            </div>
+            <div class="banner_button_box pt-4">
+              <button class="custom_btn--lg btn--white">
+                <img src="./images/play.svg" alt="" class="Play_icon" />
+                <span class="fw-semibold ms-2 fs_18">Lecture</span>
+              </button>
+              <button class="custom_btn--lg btn--info ms-3">
+                <img src="./images/info.svg" alt="" class="Play_icon" />
+                <span class="fw-semibold ms-2 fs_18">Plus d'infos</span>
+              </button>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section>
-        <div class="movies_list_box">
-          <div class="move_lists_box">
-            <div class="move_list_wrap">
-              <div class="container-fluid px-5 custom_container">
-                <div class="list__heading__box pb-4">
-                  <h4 class="list_title text-white fw-semibold">
-                    Passez a' I'actions!
-                  </h4>
-                </div>
+    <section>
+      <div class="movies_list_box">
+        <div class="move_lists_box">
+          <div class="move_list_wrap">
+            <div class="container-fluid px-5 custom_container">
+              <div class="list__heading__box pb-4">
+                <h4 class="list_title text-white fw-semibold">
+                  Passez a' I'actions!
+                </h4>
               </div>
-              <div class="container-fluid">
-                <div class="movies__carousel__Box">
-                  <div class="movies__slider">
-                    <div class="slide">
-                      <div class="wrapper">
-                        <div
-                          class="card custom__card card--rounded wrapper__front"
-                        >
-                          <div class="card__header">
-                            <img
-                              class="card__image"
-                              src="./images/p-1.jpg"
-                              alt="snowpiercer series banner"
-                            />
-                          </div>
-                        </div>
-                        <div
-                          class="card custom__card card--rounded wrapper__back"
-                        >
-                          <div class="card__header">
-                            <img
-                              class="card__image"
-                              src="./images/p-1.jpg"
-                              alt="snowpiercer series banner"
-                            />
-                          </div>
-                          <div class="card__body">
-                            <div
-                              class="d-flex justify-content-between align-items-center pb-3"
-                            >
-                              <div>
-                                <button class="btn--circle play_btn">
-                                  <img
-                                    src="./images/play.svg"
-                                    alt=""
-                                    class="action_icon"
-                                  />
-                                </button>
-                                <button
-                                  class="action_button btn--transparent btn--circle"
-                                >
-                                  <img
-                                    src="./images/plus.svg"
-                                    alt=""
-                                    class="action_icon"
-                                  />
-                                </button>
-                                <button
-                                  class="action_button btn--transparent btn--circle"
-                                >
-                                  <img
-                                    src="./images/thumb.svg"
-                                    alt=""
-                                    class="action_icon icon_white"
-                                  />
-                                </button>
-                              </div>
-                              <button
-                                class="action_button btn--transparent btn--circle"
-                              >
-                                <img
-                                  src="./images/angleDown.svg"
-                                  alt=""
-                                  class="action_icon icon_white"
-                                />
-                              </button>
-                            </div>
-                            <div class="movie_labels">
-                              <span class="age_limit">18+</span>
-                              <div class="season_count">5 Saisons</div>
-                              <span class="quality_tag">HD</span>
-                            </div>
-
-                            <div class="movie_tags">
-                              <span>Violent</span>
-                              <span>Palpitant</span>
-                              <span>Action</span>
-                            </div>
-                            <div
-                              class="card__progress d-flex justify-content-between align-items-center"
-                            >
-                              <div class="progressbar">
-                                <div class="progressbar__status"></div>
-                              </div>
-                              <span class="fw-lighter text--light__gray small"
-                                >51 of 52m</span
-                              >
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+            </div>
+            <div class="container-fluid">
+              <div class="movies__carousel__Box">
+                <div class="movies__slider ">
+                  <div class="slide">
+                    <div
+                      class="poster"
+                      data-title="Stranger Things"
+                      data-tags="16+ • 4 Saisons • HD • Sci-Fi • Horror • Mystery"
+                      data-progress="50"
+                      data-img="/images/p-5.webp"
+                    >
+                      <img src="./images/p-5.webp" alt="" class="img-fluid rounded-2"/>
                     </div>
-                    <div class="slide">
-                      <div class="wrapper">
-                        <div
-                          class="card custom__card card--rounded wrapper__front"
-                        >
-                          <div class="card__header">
-                            <img
-                              class="card__image"
-                              src="./images/p-2.jpg"
-                              alt="snowpiercer series banner"
-                            />
-                          </div>
-                        </div>
-                        <div
-                          class="card custom__card card--rounded wrapper__back"
-                        >
-                          <div class="card__header">
-                            <img
-                              class="card__image"
-                              src="./images/p-2.jpg"
-                              alt="snowpiercer series banner"
-                            />
-                          </div>
-                          <div class="card__body">
-                            <div
-                              class="d-flex justify-content-between align-items-center pb-3"
-                            >
-                              <div>
-                                <button
-                                  class="btn--circle play_btn"
-                                >
-                                  <img
-                                    src="./images/play.svg"
-                                    alt=""
-                                    class="action_icon"
-                                  />
-                                </button>
-                                <button
-                                  class="action_button btn--transparent btn--circle"
-                                >
-                                  <img
-                                    src="./images/plus.svg"
-                                    alt=""
-                                    class="action_icon"
-                                  />
-                                </button>
-                                <button
-                                  class="action_button btn--transparent btn--circle"
-                                >
-                                  <img
-                                    src="./images/thumb.svg"
-                                    alt=""
-                                    class="action_icon icon_white"
-                                  />
-                                </button>
-                              </div>
-                              <button
-                                class="action_button btn--transparent btn--circle"
-                              >
-                                <img
-                                  src="./images/angleDown.svg"
-                                  alt=""
-                                  class="action_icon icon_white"
-                                />
-                              </button>
-                            </div>
-                            <div class="movie_labels">
-                              <span class="age_limit">18+</span>
-                              <div class="season_count">5 Saisons</div>
-                              <span class="quality_tag">HD</span>
-                            </div>
-
-                            <div class="movie_tags">
-                              <span>Violent</span>
-                              <span>Palpitant</span>
-                              <span>Action</span>
-                            </div>
-                            <div
-                              class="card__progress d-flex justify-content-between align-items-center"
-                            >
-                              <div class="progressbar">
-                                <div class="progressbar__status"></div>
-                              </div>
-                              <span class="fw-lighter text--light__gray small"
-                                >51 of 52m</span
-                              >
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+                  </div>
+                   <div class="slide">
+                    <div
+                      class="poster"
+                      data-title="Stranger Things"
+                      data-tags="16+ • 4 Saisons • HD • Sci-Fi • Horror • Mystery"
+                      data-progress="50"
+                      data-img="/images/p-5.webp"
+                    >
+                      <img src="./images/p-5.webp" alt="" class="img-fluid rounded-2"/>
                     </div>
-                    <div class="slide">
-                      <div class="wrapper">
-                        <div
-                          class="card custom__card card--rounded wrapper__front"
-                        >
-                          <div class="card__header">
-                            <img
-                              class="card__image"
-                              src="./images/p-3.webp"
-                              alt="snowpiercer series banner"
-                            />
-                          </div>
-                        </div>
-                        <div
-                          class="card custom__card card--rounded wrapper__back"
-                        >
-                          <div class="card__header">
-                            <img
-                              class="card__image"
-                              src="./images/p-3.webp"
-                              alt="snowpiercer series banner"
-                            />
-                          </div>
-                          <div class="card__body">
-                            <div
-                              class="d-flex justify-content-between align-items-center pb-3"
-                            >
-                              <div>
-                                <button
-                                  class="btn--circle play_btn"
-                                >
-                                  <img
-                                    src="./images/play.svg"
-                                    alt=""
-                                    class="action_icon"
-                                  />
-                                </button>
-                                <button
-                                  class="action_button btn--transparent btn--circle"
-                                >
-                                  <img
-                                    src="./images/plus.svg"
-                                    alt=""
-                                    class="action_icon"
-                                  />
-                                </button>
-                                <button
-                                  class="action_button btn--transparent btn--circle"
-                                >
-                                  <img
-                                    src="./images/thumb.svg"
-                                    alt=""
-                                    class="action_icon icon_white"
-                                  />
-                                </button>
-                              </div>
-                              <button
-                                class="action_button btn--transparent btn--circle"
-                              >
-                                <img
-                                  src="./images/angleDown.svg"
-                                  alt=""
-                                  class="action_icon icon_white"
-                                />
-                              </button>
-                            </div>
-                            <div class="movie_labels">
-                              <span class="age_limit">18+</span>
-                              <div class="season_count">5 Saisons</div>
-                              <span class="quality_tag">HD</span>
-                            </div>
-
-                            <div class="movie_tags">
-                              <span>Violent</span>
-                              <span>Palpitant</span>
-                              <span>Action</span>
-                            </div>
-                            <div
-                              class="card__progress d-flex justify-content-between align-items-center"
-                            >
-                              <div class="progressbar">
-                                <div class="progressbar__status"></div>
-                              </div>
-                              <span class="fw-lighter text--light__gray small"
-                                >51 of 52m</span
-                              >
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+                  </div>
+                   <div class="slide">
+                    <div
+                      class="poster"
+                      data-title="Stranger Things"
+                      data-tags="16+ • 4 Saisons • HD • Sci-Fi • Horror • Mystery"
+                      data-progress="50"
+                      data-img="/images/p-5.webp"
+                    >
+                      <img src="./images/p-5.webp" alt="" class="img-fluid rounded-2"/>
                     </div>
-                    <div class="slide">
-                      <div class="wrapper">
-                        <div
-                          class="card custom__card card--rounded wrapper__front"
-                        >
-                          <div class="card__header">
-                            <img
-                              class="card__image"
-                              src="./images/p-4.jpg"
-                              alt="snowpiercer series banner"
-                            />
-                          </div>
-                        </div>
-                        <div
-                          class="card custom__card card--rounded wrapper__back"
-                        >
-                          <div class="card__header">
-                            <img
-                              class="card__image"
-                              src="./images/p-4.jpg"
-                              alt="snowpiercer series banner"
-                            />
-                          </div>
-                          <div class="card__body">
-                            <div
-                              class="d-flex justify-content-between align-items-center pb-3"
-                            >
-                              <div>
-                                <button
-                                  class="btn--circle play_btn"
-                                >
-                                  <img
-                                    src="./images/play.svg"
-                                    alt=""
-                                    class="action_icon"
-                                  />
-                                </button>
-                                <button
-                                  class="action_button btn--transparent btn--circle"
-                                >
-                                  <img
-                                    src="./images/plus.svg"
-                                    alt=""
-                                    class="action_icon"
-                                  />
-                                </button>
-                                <button
-                                  class="action_button btn--transparent btn--circle"
-                                >
-                                  <img
-                                    src="./images/thumb.svg"
-                                    alt=""
-                                    class="action_icon icon_white"
-                                  />
-                                </button>
-                              </div>
-                              <button
-                                class="action_button btn--transparent btn--circle"
-                              >
-                                <img
-                                  src="./images/angleDown.svg"
-                                  alt=""
-                                  class="action_icon icon_white"
-                                />
-                              </button>
-                            </div>
-                            <div class="movie_labels">
-                              <span class="age_limit">18+</span>
-                              <div class="season_count">5 Saisons</div>
-                              <span class="quality_tag">HD</span>
-                            </div>
-
-                            <div class="movie_tags">
-                              <span>Violent</span>
-                              <span>Palpitant</span>
-                              <span>Action</span>
-                            </div>
-                            <div
-                              class="card__progress d-flex justify-content-between align-items-center"
-                            >
-                              <div class="progressbar">
-                                <div class="progressbar__status"></div>
-                              </div>
-                              <span class="fw-lighter text--light__gray small"
-                                >51 of 52m</span
-                              >
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+                  </div>
+                   <div class="slide">
+                    <div
+                      class="poster"
+                      data-title="Stranger Things"
+                      data-tags="16+ • 4 Saisons • HD • Sci-Fi • Horror • Mystery"
+                      data-progress="50"
+                      data-img="/images/p-5.webp"
+                    >
+                      <img src="./images/p-5.webp" alt="" class="img-fluid rounded-2"/>
                     </div>
-                    <div class="slide">
-                      <div class="wrapper">
-                        <div
-                          class="card custom__card card--rounded wrapper__front"
-                        >
-                          <div class="card__header">
-                            <img
-                              class="card__image"
-                              src="./images/p-5.webp"
-                              alt="snowpiercer series banner"
-                            />
-                          </div>
-                        </div>
-                        <div
-                          class="card custom__card card--rounded wrapper__back"
-                        >
-                          <div class="card__header">
-                            <img
-                              class="card__image"
-                              src="./images/p-5.webp"
-                              alt="snowpiercer series banner"
-                            />
-                          </div>
-                          <div class="card__body">
-                            <div
-                              class="d-flex justify-content-between align-items-center pb-3"
-                            >
-                              <div>
-                                <button
-                                  class="btn--circle play_btn"
-                                >
-                                  <img
-                                    src="./images/play.svg"
-                                    alt=""
-                                    class="action_icon"
-                                  />
-                                </button>
-                                <button
-                                  class="action_button btn--transparent btn--circle"
-                                >
-                                  <img
-                                    src="./images/plus.svg"
-                                    alt=""
-                                    class="action_icon"
-                                  />
-                                </button>
-                                <button
-                                  class="action_button btn--transparent btn--circle"
-                                >
-                                  <img
-                                    src="./images/thumb.svg"
-                                    alt=""
-                                    class="action_icon icon_white"
-                                  />
-                                </button>
-                              </div>
-                              <button
-                                class="action_button btn--transparent btn--circle"
-                              >
-                                <img
-                                  src="./images/angleDown.svg"
-                                  alt=""
-                                  class="action_icon icon_white"
-                                />
-                              </button>
-                            </div>
-                            <div class="movie_labels">
-                              <span class="age_limit">18+</span>
-                              <div class="season_count">5 Saisons</div>
-                              <span class="quality_tag">HD</span>
-                            </div>
-
-                            <div class="movie_tags">
-                              <span>Violent</span>
-                              <span>Palpitant</span>
-                              <span>Action</span>
-                            </div>
-                            <div
-                              class="card__progress d-flex justify-content-between align-items-center"
-                            >
-                              <div class="progressbar">
-                                <div class="progressbar__status"></div>
-                              </div>
-                              <span class="fw-lighter text--light__gray small"
-                                >51 of 52m</span
-                              >
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+                  </div>
+                   <div class="slide">
+                    <div
+                      class="poster"
+                      data-title="Stranger Things"
+                      data-tags="16+ • 4 Saisons • HD • Sci-Fi • Horror • Mystery"
+                      data-progress="50"
+                      data-img="/images/p-5.webp"
+                    >
+                      <img src="./images/p-5.webp" alt="" class="img-fluid rounded-2"/>
                     </div>
-                    <div class="slide">
-                      <div class="wrapper">
-                        <div
-                          class="card custom__card card--rounded wrapper__front"
-                        >
-                          <div class="card__header">
-                            <img
-                              class="card__image"
-                              src="./images/p-6.jpg"
-                              alt="snowpiercer series banner"
-                            />
-                          </div>
-                        </div>
-                        <div
-                          class="card custom__card card--rounded wrapper__back"
-                        >
-                          <div class="card__header">
-                            <img
-                              class="card__image"
-                              src="./images/p-6.jpg"
-                              alt="snowpiercer series banner"
-                            />
-                          </div>
-                          <div class="card__body">
-                            <div
-                              class="d-flex justify-content-between align-items-center pb-3"
-                            >
-                              <div>
-                                <button
-                                  class="btn--circle play_btn"
-                                >
-                                  <img
-                                    src="./images/play.svg"
-                                    alt=""
-                                    class="action_icon"
-                                  />
-                                </button>
-                                <button
-                                  class="action_button btn--transparent btn--circle"
-                                >
-                                  <img
-                                    src="./images/plus.svg"
-                                    alt=""
-                                    class="action_icon"
-                                  />
-                                </button>
-                                <button
-                                  class="action_button btn--transparent btn--circle"
-                                >
-                                  <img
-                                    src="./images/thumb.svg"
-                                    alt=""
-                                    class="action_icon icon_white"
-                                  />
-                                </button>
-                              </div>
-                              <button
-                                class="action_button btn--transparent btn--circle"
-                              >
-                                <img
-                                  src="./images/angleDown.svg"
-                                  alt=""
-                                  class="action_icon icon_white"
-                                />
-                              </button>
-                            </div>
-                            <div class="movie_labels">
-                              <span class="age_limit">18+</span>
-                              <div class="season_count">5 Saisons</div>
-                              <span class="quality_tag">HD</span>
-                            </div>
-
-                            <div class="movie_tags">
-                              <span>Violent</span>
-                              <span>Palpitant</span>
-                              <span>Action</span>
-                            </div>
-                            <div
-                              class="card__progress d-flex justify-content-between align-items-center"
-                            >
-                              <div class="progressbar">
-                                <div class="progressbar__status"></div>
-                              </div>
-                              <span class="fw-lighter text--light__gray small"
-                                >51 of 52m</span
-                              >
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+                  </div>
+                   <div class="slide">
+                    <div
+                      class="poster"
+                      data-title="Stranger Things"
+                      data-tags="16+ • 4 Saisons • HD • Sci-Fi • Horror • Mystery"
+                      data-progress="50"
+                      data-img="/images/p-5.webp"
+                    >
+                      <img src="./images/p-5.webp" alt="" class="img-fluid rounded-2"/>
                     </div>
+                  </div>
+                   <div class="slide">
+                    <div
+                      class="poster"
+                      data-title="Stranger Things"
+                      data-tags="16+ • 4 Saisons • HD • Sci-Fi • Horror • Mystery"
+                      data-progress="50"
+                      data-img="/images/p-5.webp"
+                    >
+                      <img src="./images/p-5.webp" alt="" class="img-fluid rounded-2"/>
+                    </div>
+                  </div>
+                   <div class="slide">
+                    <div
+                      class="poster"
+                      data-title="Stranger Things"
+                      data-tags="16+ • 4 Saisons • HD • Sci-Fi • Horror • Mystery"
+                      data-progress="50"
+                      data-img="/images/p-5.webp"
+                    >
+                      <img src="./images/p-5.webp" alt="" class="img-fluid rounded-2"/>
+                    </div>
+                  </div>
+                   <div class="slide">
+                    <div
+                      class="poster"
+                      data-title="Stranger Things"
+                      data-tags="16+ • 4 Saisons • HD • Sci-Fi • Horror • Mystery"
+                      data-progress="50"
+                      data-img="/images/p-5.webp"
+                    >
+                      <img src="./images/p-5.webp" alt="" class="img-fluid rounded-2"/>
+                    </div>
+                  </div>
+                   <div class="slide">
+                    <div
+                      class="poster"
+                      data-title="Stranger Things"
+                      data-tags="16+ • 4 Saisons • HD • Sci-Fi • Horror • Mystery"
+                      data-progress="50"
+                      data-img="/images/p-5.webp"
+                    >
+                      <img src="./images/p-5.webp" alt="" class="img-fluid rounded-2"/>
+                    </div>
+                  </div>
                     <div class="slide">
-                      <div class="wrapper">
-                        <div
-                          class="card custom__card card--rounded wrapper__front"
-                        >
-                          <div class="card__header">
-                            <img
-                              class="card__image"
-                              src="./images/p-7.jpg"
-                              alt="snowpiercer series banner"
-                            />
-                          </div>
-                        </div>
-                        <div
-                          class="card custom__card card--rounded wrapper__back"
-                        >
-                          <div class="card__header">
-                            <img
-                              class="card__image"
-                              src="./images/p-7.jpg"
-                              alt="snowpiercer series banner"
-                            />
-                          </div>
-                          <div class="card__body">
-                            <div
-                              class="d-flex justify-content-between align-items-center pb-3"
-                            >
-                              <div>
-                                <button
-                                  class="btn--circle play_btn"
-                                >
-                                  <img
-                                    src="./images/play.svg"
-                                    alt=""
-                                    class="action_icon"
-                                  />
-                                </button>
-                                <button
-                                  class="action_button btn--transparent btn--circle"
-                                >
-                                  <img
-                                    src="./images/plus.svg"
-                                    alt=""
-                                    class="action_icon"
-                                  />
-                                </button>
-                                <button
-                                  class="action_button btn--transparent btn--circle"
-                                >
-                                  <img
-                                    src="./images/thumb.svg"
-                                    alt=""
-                                    class="action_icon icon_white"
-                                  />
-                                </button>
-                              </div>
-                              <button
-                                class="action_button btn--transparent btn--circle"
-                              >
-                                <img
-                                  src="./images/angleDown.svg"
-                                  alt=""
-                                  class="action_icon icon_white"
-                                />
-                              </button>
-                            </div>
-                            <div class="movie_labels">
-                              <span class="age_limit">18+</span>
-                              <div class="season_count">5 Saisons</div>
-                              <span class="quality_tag">HD</span>
-                            </div>
-
-                            <div class="movie_tags">
-                              <span>Violent</span>
-                              <span>Palpitant</span>
-                              <span>Action</span>
-                            </div>
-                            <div
-                              class="card__progress d-flex justify-content-between align-items-center"
-                            >
-                              <div class="progressbar">
-                                <div class="progressbar__status"></div>
-                              </div>
-                              <span class="fw-lighter text--light__gray small"
-                                >51 of 52m</span
-                              >
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+                    <div
+                      class="poster"
+                      data-title="Stranger Things"
+                      data-tags="16+ • 4 Saisons • HD • Sci-Fi • Horror • Mystery"
+                      data-progress="50"
+                      data-img="/images/p-5.webp"
+                    >
+                      <img src="./images/p-5.webp" alt="" class="img-fluid rounded-2"/>
+                    </div>
+                  </div>
+                   <div class="slide">
+                    <div
+                      class="poster"
+                      data-title="Stranger Things"
+                      data-tags="16+ • 4 Saisons • HD • Sci-Fi • Horror • Mystery"
+                      data-progress="50"
+                      data-img="/images/p-5.webp"
+                    >
+                      <img src="./images/p-5.webp" alt="" class="img-fluid rounded-2"/>
+                    </div>
+                  </div>
+                   <div class="slide">
+                    <div
+                      class="poster"
+                      data-title="Stranger Things"
+                      data-tags="16+ • 4 Saisons • HD • Sci-Fi • Horror • Mystery"
+                      data-progress="50"
+                      data-img="/images/p-5.webp"
+                    >
+                      <img src="./images/p-5.webp" alt="" class="img-fluid rounded-2"/>
+                    </div>
+                  </div>
+                   <div class="slide">
+                    <div
+                      class="poster"
+                      data-title="Stranger Things"
+                      data-tags="16+ • 4 Saisons • HD • Sci-Fi • Horror • Mystery"
+                      data-progress="50"
+                      data-img="/images/p-5.webp"
+                    >
+                      <img src="./images/p-5.webp" alt="" class="img-fluid rounded-2"/>
+                    </div>
+                  </div>
+                   <div class="slide">
+                    <div
+                      class="poster"
+                      data-title="Stranger Things"
+                      data-tags="16+ • 4 Saisons • HD • Sci-Fi • Horror • Mystery"
+                      data-progress="50"
+                      data-img="/images/p-5.webp"
+                    >
+                      <img src="./images/p-5.webp" alt="" class="img-fluid rounded-2"/>
+                    </div>
+                  </div>
+                   <div class="slide">
+                    <div
+                      class="poster"
+                      data-title="Stranger Things"
+                      data-tags="16+ • 4 Saisons • HD • Sci-Fi • Horror • Mystery"
+                      data-progress="50"
+                      data-img="/images/p-5.webp"
+                    >
+                      <img src="./images/p-5.webp" alt="" class="img-fluid rounded-2"/>
+                    </div>
+                  </div>
+                   <div class="slide">
+                    <div
+                      class="poster"
+                      data-title="Stranger Things"
+                      data-tags="16+ • 4 Saisons • HD • Sci-Fi • Horror • Mystery"
+                      data-progress="50"
+                      data-img="/images/p-5.webp"
+                    >
+                      <img src="./images/p-5.webp" alt="" class="img-fluid rounded-2"/>
+                    </div>
+                  </div>
+                   <div class="slide">
+                    <div
+                      class="poster"
+                      data-title="Stranger Things"
+                      data-tags="16+ • 4 Saisons • HD • Sci-Fi • Horror • Mystery"
+                      data-progress="50"
+                      data-img="/images/p-5.webp"
+                    >
+                      <img src="./images/p-5.webp" alt="" class="img-fluid rounded-2"/>
+                    </div>
+                  </div>
+                   <div class="slide">
+                    <div
+                      class="poster"
+                      data-title="Stranger Things"
+                      data-tags="16+ • 4 Saisons • HD • Sci-Fi • Horror • Mystery"
+                      data-progress="50"
+                      data-img="/images/p-5.webp"
+                    >
+                      <img src="./images/p-5.webp" alt="" class="img-fluid rounded-2"/>
+                    </div>
+                  </div>
+                   <div class="slide">
+                    <div
+                      class="poster"
+                      data-title="Stranger Things"
+                      data-tags="16+ • 4 Saisons • HD • Sci-Fi • Horror • Mystery"
+                      data-progress="50"
+                      data-img="/images/p-5.webp"
+                    >
+                      <img src="./images/p-5.webp" alt="" class="img-fluid rounded-2"/>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="move_list_wrap">
-              <div class="container-fluid px-5 custom_container">
-                <div class="list__heading__box pb-4">
-                  <h4 class="list_title text-white fw-semibold">
-                    Passez a' I'actions!
-                  </h4>
-                </div>
-              </div>
-              <div class="container-fluid">
-                <div class="movies__carousel__Box">
-                  <div class="movies__slider">
-                    <div class="slide">
-                      <div class="wrapper">
-                        <div
-                          class="card custom__card card--rounded wrapper__front"
-                        >
-                          <div class="card__header">
-                            <img
-                              class="card__image"
-                              src="./images/p-1.jpg"
-                              alt="snowpiercer series banner"
-                            />
-                          </div>
-                        </div>
-                        <div
-                          class="card custom__card card--rounded wrapper__back"
-                        >
-                          <div class="card__header">
-                            <img
-                              class="card__image"
-                              src="./images/p-1.jpg"
-                              alt="snowpiercer series banner"
-                            />
-                          </div>
-                          <div class="card__body">
-                            <div
-                              class="d-flex justify-content-between align-items-center pb-3"
-                            >
-                              <div>
-                                <button class="btn--circle play_btn">
-                                  <img
-                                    src="./images/play.svg"
-                                    alt=""
-                                    class="action_icon"
-                                  />
-                                </button>
-                                <button
-                                  class="action_button btn--transparent btn--circle"
-                                >
-                                  <img
-                                    src="./images/plus.svg"
-                                    alt=""
-                                    class="action_icon"
-                                  />
-                                </button>
-                                <button
-                                  class="action_button btn--transparent btn--circle"
-                                >
-                                  <img
-                                    src="./images/thumb.svg"
-                                    alt=""
-                                    class="action_icon icon_white"
-                                  />
-                                </button>
-                              </div>
-                              <button
-                                class="action_button btn--transparent btn--circle"
-                              >
-                                <img
-                                  src="./images/angleDown.svg"
-                                  alt=""
-                                  class="action_icon icon_white"
-                                />
-                              </button>
-                            </div>
-                            <div class="movie_labels">
-                              <span class="age_limit">18+</span>
-                              <div class="season_count">5 Saisons</div>
-                              <span class="quality_tag">HD</span>
-                            </div>
-
-                            <div class="movie_tags">
-                              <span>Violent</span>
-                              <span>Palpitant</span>
-                              <span>Action</span>
-                            </div>
-                            <div
-                              class="card__progress d-flex justify-content-between align-items-center"
-                            >
-                              <div class="progressbar">
-                                <div class="progressbar__status"></div>
-                              </div>
-                              <span class="fw-lighter text--light__gray small"
-                                >51 of 52m</span
-                              >
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="slide">
-                      <div class="wrapper">
-                        <div
-                          class="card custom__card card--rounded wrapper__front"
-                        >
-                          <div class="card__header">
-                            <img
-                              class="card__image"
-                              src="./images/p-2.jpg"
-                              alt="snowpiercer series banner"
-                            />
-                          </div>
-                        </div>
-                        <div
-                          class="card custom__card card--rounded wrapper__back"
-                        >
-                          <div class="card__header">
-                            <img
-                              class="card__image"
-                              src="./images/p-2.jpg"
-                              alt="snowpiercer series banner"
-                            />
-                          </div>
-                          <div class="card__body">
-                            <div
-                              class="d-flex justify-content-between align-items-center pb-3"
-                            >
-                              <div>
-                                <button
-                                  class="btn--circle play_btn"
-                                >
-                                  <img
-                                    src="./images/play.svg"
-                                    alt=""
-                                    class="action_icon"
-                                  />
-                                </button>
-                                <button
-                                  class="action_button btn--transparent btn--circle"
-                                >
-                                  <img
-                                    src="./images/plus.svg"
-                                    alt=""
-                                    class="action_icon"
-                                  />
-                                </button>
-                                <button
-                                  class="action_button btn--transparent btn--circle"
-                                >
-                                  <img
-                                    src="./images/thumb.svg"
-                                    alt=""
-                                    class="action_icon icon_white"
-                                  />
-                                </button>
-                              </div>
-                              <button
-                                class="action_button btn--transparent btn--circle"
-                              >
-                                <img
-                                  src="./images/angleDown.svg"
-                                  alt=""
-                                  class="action_icon icon_white"
-                                />
-                              </button>
-                            </div>
-                            <div class="movie_labels">
-                              <span class="age_limit">18+</span>
-                              <div class="season_count">5 Saisons</div>
-                              <span class="quality_tag">HD</span>
-                            </div>
-
-                            <div class="movie_tags">
-                              <span>Violent</span>
-                              <span>Palpitant</span>
-                              <span>Action</span>
-                            </div>
-                            <div
-                              class="card__progress d-flex justify-content-between align-items-center"
-                            >
-                              <div class="progressbar">
-                                <div class="progressbar__status"></div>
-                              </div>
-                              <span class="fw-lighter text--light__gray small"
-                                >51 of 52m</span
-                              >
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="slide">
-                      <div class="wrapper">
-                        <div
-                          class="card custom__card card--rounded wrapper__front"
-                        >
-                          <div class="card__header">
-                            <img
-                              class="card__image"
-                              src="./images/p-3.webp"
-                              alt="snowpiercer series banner"
-                            />
-                          </div>
-                        </div>
-                        <div
-                          class="card custom__card card--rounded wrapper__back"
-                        >
-                          <div class="card__header">
-                            <img
-                              class="card__image"
-                              src="./images/p-3.webp"
-                              alt="snowpiercer series banner"
-                            />
-                          </div>
-                          <div class="card__body">
-                            <div
-                              class="d-flex justify-content-between align-items-center pb-3"
-                            >
-                              <div>
-                                <button
-                                  class="btn--circle play_btn"
-                                >
-                                  <img
-                                    src="./images/play.svg"
-                                    alt=""
-                                    class="action_icon"
-                                  />
-                                </button>
-                                <button
-                                  class="action_button btn--transparent btn--circle"
-                                >
-                                  <img
-                                    src="./images/plus.svg"
-                                    alt=""
-                                    class="action_icon"
-                                  />
-                                </button>
-                                <button
-                                  class="action_button btn--transparent btn--circle"
-                                >
-                                  <img
-                                    src="./images/thumb.svg"
-                                    alt=""
-                                    class="action_icon icon_white"
-                                  />
-                                </button>
-                              </div>
-                              <button
-                                class="action_button btn--transparent btn--circle"
-                              >
-                                <img
-                                  src="./images/angleDown.svg"
-                                  alt=""
-                                  class="action_icon icon_white"
-                                />
-                              </button>
-                            </div>
-                            <div class="movie_labels">
-                              <span class="age_limit">18+</span>
-                              <div class="season_count">5 Saisons</div>
-                              <span class="quality_tag">HD</span>
-                            </div>
-
-                            <div class="movie_tags">
-                              <span>Violent</span>
-                              <span>Palpitant</span>
-                              <span>Action</span>
-                            </div>
-                            <div
-                              class="card__progress d-flex justify-content-between align-items-center"
-                            >
-                              <div class="progressbar">
-                                <div class="progressbar__status"></div>
-                              </div>
-                              <span class="fw-lighter text--light__gray small"
-                                >51 of 52m</span
-                              >
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="slide">
-                      <div class="wrapper">
-                        <div
-                          class="card custom__card card--rounded wrapper__front"
-                        >
-                          <div class="card__header">
-                            <img
-                              class="card__image"
-                              src="./images/p-4.jpg"
-                              alt="snowpiercer series banner"
-                            />
-                          </div>
-                        </div>
-                        <div
-                          class="card custom__card card--rounded wrapper__back"
-                        >
-                          <div class="card__header">
-                            <img
-                              class="card__image"
-                              src="./images/p-4.jpg"
-                              alt="snowpiercer series banner"
-                            />
-                          </div>
-                          <div class="card__body">
-                            <div
-                              class="d-flex justify-content-between align-items-center pb-3"
-                            >
-                              <div>
-                                <button
-                                  class="btn--circle play_btn"
-                                >
-                                  <img
-                                    src="./images/play.svg"
-                                    alt=""
-                                    class="action_icon"
-                                  />
-                                </button>
-                                <button
-                                  class="action_button btn--transparent btn--circle"
-                                >
-                                  <img
-                                    src="./images/plus.svg"
-                                    alt=""
-                                    class="action_icon"
-                                  />
-                                </button>
-                                <button
-                                  class="action_button btn--transparent btn--circle"
-                                >
-                                  <img
-                                    src="./images/thumb.svg"
-                                    alt=""
-                                    class="action_icon icon_white"
-                                  />
-                                </button>
-                              </div>
-                              <button
-                                class="action_button btn--transparent btn--circle"
-                              >
-                                <img
-                                  src="./images/angleDown.svg"
-                                  alt=""
-                                  class="action_icon icon_white"
-                                />
-                              </button>
-                            </div>
-                            <div class="movie_labels">
-                              <span class="age_limit">18+</span>
-                              <div class="season_count">5 Saisons</div>
-                              <span class="quality_tag">HD</span>
-                            </div>
-
-                            <div class="movie_tags">
-                              <span>Violent</span>
-                              <span>Palpitant</span>
-                              <span>Action</span>
-                            </div>
-                            <div
-                              class="card__progress d-flex justify-content-between align-items-center"
-                            >
-                              <div class="progressbar">
-                                <div class="progressbar__status"></div>
-                              </div>
-                              <span class="fw-lighter text--light__gray small"
-                                >51 of 52m</span
-                              >
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="slide">
-                      <div class="wrapper">
-                        <div
-                          class="card custom__card card--rounded wrapper__front"
-                        >
-                          <div class="card__header">
-                            <img
-                              class="card__image"
-                              src="./images/p-5.webp"
-                              alt="snowpiercer series banner"
-                            />
-                          </div>
-                        </div>
-                        <div
-                          class="card custom__card card--rounded wrapper__back"
-                        >
-                          <div class="card__header">
-                            <img
-                              class="card__image"
-                              src="./images/p-5.webp"
-                              alt="snowpiercer series banner"
-                            />
-                          </div>
-                          <div class="card__body">
-                            <div
-                              class="d-flex justify-content-between align-items-center pb-3"
-                            >
-                              <div>
-                                <button
-                                  class="btn--circle play_btn"
-                                >
-                                  <img
-                                    src="./images/play.svg"
-                                    alt=""
-                                    class="action_icon"
-                                  />
-                                </button>
-                                <button
-                                  class="action_button btn--transparent btn--circle"
-                                >
-                                  <img
-                                    src="./images/plus.svg"
-                                    alt=""
-                                    class="action_icon"
-                                  />
-                                </button>
-                                <button
-                                  class="action_button btn--transparent btn--circle"
-                                >
-                                  <img
-                                    src="./images/thumb.svg"
-                                    alt=""
-                                    class="action_icon icon_white"
-                                  />
-                                </button>
-                              </div>
-                              <button
-                                class="action_button btn--transparent btn--circle"
-                              >
-                                <img
-                                  src="./images/angleDown.svg"
-                                  alt=""
-                                  class="action_icon icon_white"
-                                />
-                              </button>
-                            </div>
-                            <div class="movie_labels">
-                              <span class="age_limit">18+</span>
-                              <div class="season_count">5 Saisons</div>
-                              <span class="quality_tag">HD</span>
-                            </div>
-
-                            <div class="movie_tags">
-                              <span>Violent</span>
-                              <span>Palpitant</span>
-                              <span>Action</span>
-                            </div>
-                            <div
-                              class="card__progress d-flex justify-content-between align-items-center"
-                            >
-                              <div class="progressbar">
-                                <div class="progressbar__status"></div>
-                              </div>
-                              <span class="fw-lighter text--light__gray small"
-                                >51 of 52m</span
-                              >
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="slide">
-                      <div class="wrapper">
-                        <div
-                          class="card custom__card card--rounded wrapper__front"
-                        >
-                          <div class="card__header">
-                            <img
-                              class="card__image"
-                              src="./images/p-6.jpg"
-                              alt="snowpiercer series banner"
-                            />
-                          </div>
-                        </div>
-                        <div
-                          class="card custom__card card--rounded wrapper__back"
-                        >
-                          <div class="card__header">
-                            <img
-                              class="card__image"
-                              src="./images/p-6.jpg"
-                              alt="snowpiercer series banner"
-                            />
-                          </div>
-                          <div class="card__body">
-                            <div
-                              class="d-flex justify-content-between align-items-center pb-3"
-                            >
-                              <div>
-                                <button
-                                  class="btn--circle play_btn"
-                                >
-                                  <img
-                                    src="./images/play.svg"
-                                    alt=""
-                                    class="action_icon"
-                                  />
-                                </button>
-                                <button
-                                  class="action_button btn--transparent btn--circle"
-                                >
-                                  <img
-                                    src="./images/plus.svg"
-                                    alt=""
-                                    class="action_icon"
-                                  />
-                                </button>
-                                <button
-                                  class="action_button btn--transparent btn--circle"
-                                >
-                                  <img
-                                    src="./images/thumb.svg"
-                                    alt=""
-                                    class="action_icon icon_white"
-                                  />
-                                </button>
-                              </div>
-                              <button
-                                class="action_button btn--transparent btn--circle"
-                              >
-                                <img
-                                  src="./images/angleDown.svg"
-                                  alt=""
-                                  class="action_icon icon_white"
-                                />
-                              </button>
-                            </div>
-                            <div class="movie_labels">
-                              <span class="age_limit">18+</span>
-                              <div class="season_count">5 Saisons</div>
-                              <span class="quality_tag">HD</span>
-                            </div>
-
-                            <div class="movie_tags">
-                              <span>Violent</span>
-                              <span>Palpitant</span>
-                              <span>Action</span>
-                            </div>
-                            <div
-                              class="card__progress d-flex justify-content-between align-items-center"
-                            >
-                              <div class="progressbar">
-                                <div class="progressbar__status"></div>
-                              </div>
-                              <span class="fw-lighter text--light__gray small"
-                                >51 of 52m</span
-                              >
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="slide">
-                      <div class="wrapper">
-                        <div
-                          class="card custom__card card--rounded wrapper__front"
-                        >
-                          <div class="card__header">
-                            <img
-                              class="card__image"
-                              src="./images/p-7.jpg"
-                              alt="snowpiercer series banner"
-                            />
-                          </div>
-                        </div>
-                        <div
-                          class="card custom__card card--rounded wrapper__back"
-                        >
-                          <div class="card__header">
-                            <img
-                              class="card__image"
-                              src="./images/p-7.jpg"
-                              alt="snowpiercer series banner"
-                            />
-                          </div>
-                          <div class="card__body">
-                            <div
-                              class="d-flex justify-content-between align-items-center pb-3"
-                            >
-                              <div>
-                                <button
-                                  class="btn--circle play_btn"
-                                >
-                                  <img
-                                    src="./images/play.svg"
-                                    alt=""
-                                    class="action_icon"
-                                  />
-                                </button>
-                                <button
-                                  class="action_button btn--transparent btn--circle"
-                                >
-                                  <img
-                                    src="./images/plus.svg"
-                                    alt=""
-                                    class="action_icon"
-                                  />
-                                </button>
-                                <button
-                                  class="action_button btn--transparent btn--circle"
-                                >
-                                  <img
-                                    src="./images/thumb.svg"
-                                    alt=""
-                                    class="action_icon icon_white"
-                                  />
-                                </button>
-                              </div>
-                              <button
-                                class="action_button btn--transparent btn--circle"
-                              >
-                                <img
-                                  src="./images/angleDown.svg"
-                                  alt=""
-                                  class="action_icon icon_white"
-                                />
-                              </button>
-                            </div>
-                            <div class="movie_labels">
-                              <span class="age_limit">18+</span>
-                              <div class="season_count">5 Saisons</div>
-                              <span class="quality_tag">HD</span>
-                            </div>
-
-                            <div class="movie_tags">
-                              <span>Violent</span>
-                              <span>Palpitant</span>
-                              <span>Action</span>
-                            </div>
-                            <div
-                              class="card__progress d-flex justify-content-between align-items-center"
-                            >
-                              <div class="progressbar">
-                                <div class="progressbar__status"></div>
-                              </div>
-                              <span class="fw-lighter text--light__gray small"
-                                >51 of 52m</span
-                              >
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+          </div>
+           <div class="move_list_wrap">
+            <div class="container-fluid px-5 custom_container">
+              <div class="list__heading__box pb-4">
+                <h4 class="list_title text-white fw-semibold">
+                  Passez a' I'actions!
+                </h4>
               </div>
             </div>
-            <div class="move_list_wrap">
-              <div class="container-fluid px-5 custom_container">
-                <div class="list__heading__box pb-4">
-                  <h4 class="list_title text-white fw-semibold">
-                    Passez a' I'actions!
-                  </h4>
-                </div>
-              </div>
-              <div class="container-fluid">
-                <div class="movies__carousel__Box">
-                  <div class="movies__slider">
-                    <div class="slide">
-                      <div class="wrapper">
-                        <div
-                          class="card custom__card card--rounded wrapper__front"
-                        >
-                          <div class="card__header">
-                            <img
-                              class="card__image"
-                              src="./images/p-1.jpg"
-                              alt="snowpiercer series banner"
-                            />
-                          </div>
-                        </div>
-                        <div
-                          class="card custom__card card--rounded wrapper__back"
-                        >
-                          <div class="card__header">
-                            <img
-                              class="card__image"
-                              src="./images/p-1.jpg"
-                              alt="snowpiercer series banner"
-                            />
-                          </div>
-                          <div class="card__body">
-                            <div
-                              class="d-flex justify-content-between align-items-center pb-3"
-                            >
-                              <div>
-                                <button class="btn--circle play_btn">
-                                  <img
-                                    src="./images/play.svg"
-                                    alt=""
-                                    class="action_icon"
-                                  />
-                                </button>
-                                <button
-                                  class="action_button btn--transparent btn--circle"
-                                >
-                                  <img
-                                    src="./images/plus.svg"
-                                    alt=""
-                                    class="action_icon"
-                                  />
-                                </button>
-                                <button
-                                  class="action_button btn--transparent btn--circle"
-                                >
-                                  <img
-                                    src="./images/thumb.svg"
-                                    alt=""
-                                    class="action_icon icon_white"
-                                  />
-                                </button>
-                              </div>
-                              <button
-                                class="action_button btn--transparent btn--circle"
-                              >
-                                <img
-                                  src="./images/angleDown.svg"
-                                  alt=""
-                                  class="action_icon icon_white"
-                                />
-                              </button>
-                            </div>
-                            <div class="movie_labels">
-                              <span class="age_limit">18+</span>
-                              <div class="season_count">5 Saisons</div>
-                              <span class="quality_tag">HD</span>
-                            </div>
-
-                            <div class="movie_tags">
-                              <span>Violent</span>
-                              <span>Palpitant</span>
-                              <span>Action</span>
-                            </div>
-                            <div
-                              class="card__progress d-flex justify-content-between align-items-center"
-                            >
-                              <div class="progressbar">
-                                <div class="progressbar__status"></div>
-                              </div>
-                              <span class="fw-lighter text--light__gray small"
-                                >51 of 52m</span
-                              >
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="slide">
-                      <div class="wrapper">
-                        <div
-                          class="card custom__card card--rounded wrapper__front"
-                        >
-                          <div class="card__header">
-                            <img
-                              class="card__image"
-                              src="./images/p-2.jpg"
-                              alt="snowpiercer series banner"
-                            />
-                          </div>
-                        </div>
-                        <div
-                          class="card custom__card card--rounded wrapper__back"
-                        >
-                          <div class="card__header">
-                            <img
-                              class="card__image"
-                              src="./images/p-2.jpg"
-                              alt="snowpiercer series banner"
-                            />
-                          </div>
-                          <div class="card__body">
-                            <div
-                              class="d-flex justify-content-between align-items-center pb-3"
-                            >
-                              <div>
-                                <button
-                                  class="btn--circle play_btn"
-                                >
-                                  <img
-                                    src="./images/play.svg"
-                                    alt=""
-                                    class="action_icon"
-                                  />
-                                </button>
-                                <button
-                                  class="action_button btn--transparent btn--circle"
-                                >
-                                  <img
-                                    src="./images/plus.svg"
-                                    alt=""
-                                    class="action_icon"
-                                  />
-                                </button>
-                                <button
-                                  class="action_button btn--transparent btn--circle"
-                                >
-                                  <img
-                                    src="./images/thumb.svg"
-                                    alt=""
-                                    class="action_icon icon_white"
-                                  />
-                                </button>
-                              </div>
-                              <button
-                                class="action_button btn--transparent btn--circle"
-                              >
-                                <img
-                                  src="./images/angleDown.svg"
-                                  alt=""
-                                  class="action_icon icon_white"
-                                />
-                              </button>
-                            </div>
-                            <div class="movie_labels">
-                              <span class="age_limit">18+</span>
-                              <div class="season_count">5 Saisons</div>
-                              <span class="quality_tag">HD</span>
-                            </div>
-
-                            <div class="movie_tags">
-                              <span>Violent</span>
-                              <span>Palpitant</span>
-                              <span>Action</span>
-                            </div>
-                            <div
-                              class="card__progress d-flex justify-content-between align-items-center"
-                            >
-                              <div class="progressbar">
-                                <div class="progressbar__status"></div>
-                              </div>
-                              <span class="fw-lighter text--light__gray small"
-                                >51 of 52m</span
-                              >
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="slide">
-                      <div class="wrapper">
-                        <div
-                          class="card custom__card card--rounded wrapper__front"
-                        >
-                          <div class="card__header">
-                            <img
-                              class="card__image"
-                              src="./images/p-3.webp"
-                              alt="snowpiercer series banner"
-                            />
-                          </div>
-                        </div>
-                        <div
-                          class="card custom__card card--rounded wrapper__back"
-                        >
-                          <div class="card__header">
-                            <img
-                              class="card__image"
-                              src="./images/p-3.webp"
-                              alt="snowpiercer series banner"
-                            />
-                          </div>
-                          <div class="card__body">
-                            <div
-                              class="d-flex justify-content-between align-items-center pb-3"
-                            >
-                              <div>
-                                <button
-                                  class="btn--circle play_btn"
-                                >
-                                  <img
-                                    src="./images/play.svg"
-                                    alt=""
-                                    class="action_icon"
-                                  />
-                                </button>
-                                <button
-                                  class="action_button btn--transparent btn--circle"
-                                >
-                                  <img
-                                    src="./images/plus.svg"
-                                    alt=""
-                                    class="action_icon"
-                                  />
-                                </button>
-                                <button
-                                  class="action_button btn--transparent btn--circle"
-                                >
-                                  <img
-                                    src="./images/thumb.svg"
-                                    alt=""
-                                    class="action_icon icon_white"
-                                  />
-                                </button>
-                              </div>
-                              <button
-                                class="action_button btn--transparent btn--circle"
-                              >
-                                <img
-                                  src="./images/angleDown.svg"
-                                  alt=""
-                                  class="action_icon icon_white"
-                                />
-                              </button>
-                            </div>
-                            <div class="movie_labels">
-                              <span class="age_limit">18+</span>
-                              <div class="season_count">5 Saisons</div>
-                              <span class="quality_tag">HD</span>
-                            </div>
-
-                            <div class="movie_tags">
-                              <span>Violent</span>
-                              <span>Palpitant</span>
-                              <span>Action</span>
-                            </div>
-                            <div
-                              class="card__progress d-flex justify-content-between align-items-center"
-                            >
-                              <div class="progressbar">
-                                <div class="progressbar__status"></div>
-                              </div>
-                              <span class="fw-lighter text--light__gray small"
-                                >51 of 52m</span
-                              >
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="slide">
-                      <div class="wrapper">
-                        <div
-                          class="card custom__card card--rounded wrapper__front"
-                        >
-                          <div class="card__header">
-                            <img
-                              class="card__image"
-                              src="./images/p-4.jpg"
-                              alt="snowpiercer series banner"
-                            />
-                          </div>
-                        </div>
-                        <div
-                          class="card custom__card card--rounded wrapper__back"
-                        >
-                          <div class="card__header">
-                            <img
-                              class="card__image"
-                              src="./images/p-4.jpg"
-                              alt="snowpiercer series banner"
-                            />
-                          </div>
-                          <div class="card__body">
-                            <div
-                              class="d-flex justify-content-between align-items-center pb-3"
-                            >
-                              <div>
-                                <button
-                                  class="btn--circle play_btn"
-                                >
-                                  <img
-                                    src="./images/play.svg"
-                                    alt=""
-                                    class="action_icon"
-                                  />
-                                </button>
-                                <button
-                                  class="action_button btn--transparent btn--circle"
-                                >
-                                  <img
-                                    src="./images/plus.svg"
-                                    alt=""
-                                    class="action_icon"
-                                  />
-                                </button>
-                                <button
-                                  class="action_button btn--transparent btn--circle"
-                                >
-                                  <img
-                                    src="./images/thumb.svg"
-                                    alt=""
-                                    class="action_icon icon_white"
-                                  />
-                                </button>
-                              </div>
-                              <button
-                                class="action_button btn--transparent btn--circle"
-                              >
-                                <img
-                                  src="./images/angleDown.svg"
-                                  alt=""
-                                  class="action_icon icon_white"
-                                />
-                              </button>
-                            </div>
-                            <div class="movie_labels">
-                              <span class="age_limit">18+</span>
-                              <div class="season_count">5 Saisons</div>
-                              <span class="quality_tag">HD</span>
-                            </div>
-
-                            <div class="movie_tags">
-                              <span>Violent</span>
-                              <span>Palpitant</span>
-                              <span>Action</span>
-                            </div>
-                            <div
-                              class="card__progress d-flex justify-content-between align-items-center"
-                            >
-                              <div class="progressbar">
-                                <div class="progressbar__status"></div>
-                              </div>
-                              <span class="fw-lighter text--light__gray small"
-                                >51 of 52m</span
-                              >
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="slide">
-                      <div class="wrapper">
-                        <div
-                          class="card custom__card card--rounded wrapper__front"
-                        >
-                          <div class="card__header">
-                            <img
-                              class="card__image"
-                              src="./images/p-5.webp"
-                              alt="snowpiercer series banner"
-                            />
-                          </div>
-                        </div>
-                        <div
-                          class="card custom__card card--rounded wrapper__back"
-                        >
-                          <div class="card__header">
-                            <img
-                              class="card__image"
-                              src="./images/p-5.webp"
-                              alt="snowpiercer series banner"
-                            />
-                          </div>
-                          <div class="card__body">
-                            <div
-                              class="d-flex justify-content-between align-items-center pb-3"
-                            >
-                              <div>
-                                <button
-                                  class="btn--circle play_btn"
-                                >
-                                  <img
-                                    src="./images/play.svg"
-                                    alt=""
-                                    class="action_icon"
-                                  />
-                                </button>
-                                <button
-                                  class="action_button btn--transparent btn--circle"
-                                >
-                                  <img
-                                    src="./images/plus.svg"
-                                    alt=""
-                                    class="action_icon"
-                                  />
-                                </button>
-                                <button
-                                  class="action_button btn--transparent btn--circle"
-                                >
-                                  <img
-                                    src="./images/thumb.svg"
-                                    alt=""
-                                    class="action_icon icon_white"
-                                  />
-                                </button>
-                              </div>
-                              <button
-                                class="action_button btn--transparent btn--circle"
-                              >
-                                <img
-                                  src="./images/angleDown.svg"
-                                  alt=""
-                                  class="action_icon icon_white"
-                                />
-                              </button>
-                            </div>
-                            <div class="movie_labels">
-                              <span class="age_limit">18+</span>
-                              <div class="season_count">5 Saisons</div>
-                              <span class="quality_tag">HD</span>
-                            </div>
-
-                            <div class="movie_tags">
-                              <span>Violent</span>
-                              <span>Palpitant</span>
-                              <span>Action</span>
-                            </div>
-                            <div
-                              class="card__progress d-flex justify-content-between align-items-center"
-                            >
-                              <div class="progressbar">
-                                <div class="progressbar__status"></div>
-                              </div>
-                              <span class="fw-lighter text--light__gray small"
-                                >51 of 52m</span
-                              >
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="slide">
-                      <div class="wrapper">
-                        <div
-                          class="card custom__card card--rounded wrapper__front"
-                        >
-                          <div class="card__header">
-                            <img
-                              class="card__image"
-                              src="./images/p-6.jpg"
-                              alt="snowpiercer series banner"
-                            />
-                          </div>
-                        </div>
-                        <div
-                          class="card custom__card card--rounded wrapper__back"
-                        >
-                          <div class="card__header">
-                            <img
-                              class="card__image"
-                              src="./images/p-6.jpg"
-                              alt="snowpiercer series banner"
-                            />
-                          </div>
-                          <div class="card__body">
-                            <div
-                              class="d-flex justify-content-between align-items-center pb-3"
-                            >
-                              <div>
-                                <button
-                                  class="btn--circle play_btn"
-                                >
-                                  <img
-                                    src="./images/play.svg"
-                                    alt=""
-                                    class="action_icon"
-                                  />
-                                </button>
-                                <button
-                                  class="action_button btn--transparent btn--circle"
-                                >
-                                  <img
-                                    src="./images/plus.svg"
-                                    alt=""
-                                    class="action_icon"
-                                  />
-                                </button>
-                                <button
-                                  class="action_button btn--transparent btn--circle"
-                                >
-                                  <img
-                                    src="./images/thumb.svg"
-                                    alt=""
-                                    class="action_icon icon_white"
-                                  />
-                                </button>
-                              </div>
-                              <button
-                                class="action_button btn--transparent btn--circle"
-                              >
-                                <img
-                                  src="./images/angleDown.svg"
-                                  alt=""
-                                  class="action_icon icon_white"
-                                />
-                              </button>
-                            </div>
-                            <div class="movie_labels">
-                              <span class="age_limit">18+</span>
-                              <div class="season_count">5 Saisons</div>
-                              <span class="quality_tag">HD</span>
-                            </div>
-
-                            <div class="movie_tags">
-                              <span>Violent</span>
-                              <span>Palpitant</span>
-                              <span>Action</span>
-                            </div>
-                            <div
-                              class="card__progress d-flex justify-content-between align-items-center"
-                            >
-                              <div class="progressbar">
-                                <div class="progressbar__status"></div>
-                              </div>
-                              <span class="fw-lighter text--light__gray small"
-                                >51 of 52m</span
-                              >
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="slide">
-                      <div class="wrapper">
-                        <div
-                          class="card custom__card card--rounded wrapper__front"
-                        >
-                          <div class="card__header">
-                            <img
-                              class="card__image"
-                              src="./images/p-7.jpg"
-                              alt="snowpiercer series banner"
-                            />
-                          </div>
-                        </div>
-                        <div
-                          class="card custom__card card--rounded wrapper__back"
-                        >
-                          <div class="card__header">
-                            <img
-                              class="card__image"
-                              src="./images/p-7.jpg"
-                              alt="snowpiercer series banner"
-                            />
-                          </div>
-                          <div class="card__body">
-                            <div
-                              class="d-flex justify-content-between align-items-center pb-3"
-                            >
-                              <div>
-                                <button
-                                  class="btn--circle play_btn"
-                                >
-                                  <img
-                                    src="./images/play.svg"
-                                    alt=""
-                                    class="action_icon"
-                                  />
-                                </button>
-                                <button
-                                  class="action_button btn--transparent btn--circle"
-                                >
-                                  <img
-                                    src="./images/plus.svg"
-                                    alt=""
-                                    class="action_icon"
-                                  />
-                                </button>
-                                <button
-                                  class="action_button btn--transparent btn--circle"
-                                >
-                                  <img
-                                    src="./images/thumb.svg"
-                                    alt=""
-                                    class="action_icon icon_white"
-                                  />
-                                </button>
-                              </div>
-                              <button
-                                class="action_button btn--transparent btn--circle"
-                              >
-                                <img
-                                  src="./images/angleDown.svg"
-                                  alt=""
-                                  class="action_icon icon_white"
-                                />
-                              </button>
-                            </div>
-                            <div class="movie_labels">
-                              <span class="age_limit">18+</span>
-                              <div class="season_count">5 Saisons</div>
-                              <span class="quality_tag">HD</span>
-                            </div>
-
-                            <div class="movie_tags">
-                              <span>Violent</span>
-                              <span>Palpitant</span>
-                              <span>Action</span>
-                            </div>
-                            <div
-                              class="card__progress d-flex justify-content-between align-items-center"
-                            >
-                              <div class="progressbar">
-                                <div class="progressbar__status"></div>
-                              </div>
-                              <span class="fw-lighter text--light__gray small"
-                                >51 of 52m</span
-                              >
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+            <div class="container-fluid">
+              <div class="movies__carousel__Box">
+                <div class="movies__slider">
+                  <div class="slide">
+                    <div
+                      class="poster"
+                      data-title="Stranger Things"
+                      data-tags="16+ • 4 Saisons • HD • Sci-Fi • Horror • Mystery"
+                      data-progress="50"
+                      data-img="/images/p-5.webp"
+                    >
+                      <img src="./images/p-5.webp" alt="" class="img-fluid rounded-2"/>
                     </div>
                   </div>
-                </div>
-              </div>
-            </div>
-            <div class="move_list_wrap">
-              <div class="container-fluid px-5 custom_container">
-                <div class="list__heading__box pb-4">
-                  <h4 class="list_title text-white fw-semibold">
-                    Passez a' I'actions!
-                  </h4>
-                </div>
-              </div>
-              <div class="container-fluid">
-                <div class="movies__carousel__Box">
-                  <div class="movies__slider">
-                    <div class="slide">
-                      <div class="wrapper">
-                        <div
-                          class="card custom__card card--rounded wrapper__front"
-                        >
-                          <div class="card__header">
-                            <img
-                              class="card__image"
-                              src="./images/p-1.jpg"
-                              alt="snowpiercer series banner"
-                            />
-                          </div>
-                        </div>
-                        <div
-                          class="card custom__card card--rounded wrapper__back"
-                        >
-                          <div class="card__header">
-                            <img
-                              class="card__image"
-                              src="./images/p-1.jpg"
-                              alt="snowpiercer series banner"
-                            />
-                          </div>
-                          <div class="card__body">
-                            <div
-                              class="d-flex justify-content-between align-items-center pb-3"
-                            >
-                              <div>
-                                <button class="btn--circle play_btn">
-                                  <img
-                                    src="./images/play.svg"
-                                    alt=""
-                                    class="action_icon"
-                                  />
-                                </button>
-                                <button
-                                  class="action_button btn--transparent btn--circle"
-                                >
-                                  <img
-                                    src="./images/plus.svg"
-                                    alt=""
-                                    class="action_icon"
-                                  />
-                                </button>
-                                <button
-                                  class="action_button btn--transparent btn--circle"
-                                >
-                                  <img
-                                    src="./images/thumb.svg"
-                                    alt=""
-                                    class="action_icon icon_white"
-                                  />
-                                </button>
-                              </div>
-                              <button
-                                class="action_button btn--transparent btn--circle"
-                              >
-                                <img
-                                  src="./images/angleDown.svg"
-                                  alt=""
-                                  class="action_icon icon_white"
-                                />
-                              </button>
-                            </div>
-                            <div class="movie_labels">
-                              <span class="age_limit">18+</span>
-                              <div class="season_count">5 Saisons</div>
-                              <span class="quality_tag">HD</span>
-                            </div>
-
-                            <div class="movie_tags">
-                              <span>Violent</span>
-                              <span>Palpitant</span>
-                              <span>Action</span>
-                            </div>
-                            <div
-                              class="card__progress d-flex justify-content-between align-items-center"
-                            >
-                              <div class="progressbar">
-                                <div class="progressbar__status"></div>
-                              </div>
-                              <span class="fw-lighter text--light__gray small"
-                                >51 of 52m</span
-                              >
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+                   <div class="slide">
+                    <div
+                      class="poster"
+                      data-title="Stranger Things"
+                      data-tags="16+ • 4 Saisons • HD • Sci-Fi • Horror • Mystery"
+                      data-progress="50"
+                      data-img="/images/p-5.webp"
+                    >
+                      <img src="./images/p-5.webp" alt="" class="img-fluid rounded-2"/>
                     </div>
-                    <div class="slide">
-                      <div class="wrapper">
-                        <div
-                          class="card custom__card card--rounded wrapper__front"
-                        >
-                          <div class="card__header">
-                            <img
-                              class="card__image"
-                              src="./images/p-2.jpg"
-                              alt="snowpiercer series banner"
-                            />
-                          </div>
-                        </div>
-                        <div
-                          class="card custom__card card--rounded wrapper__back"
-                        >
-                          <div class="card__header">
-                            <img
-                              class="card__image"
-                              src="./images/p-2.jpg"
-                              alt="snowpiercer series banner"
-                            />
-                          </div>
-                          <div class="card__body">
-                            <div
-                              class="d-flex justify-content-between align-items-center pb-3"
-                            >
-                              <div>
-                                <button
-                                  class="btn--circle play_btn"
-                                >
-                                  <img
-                                    src="./images/play.svg"
-                                    alt=""
-                                    class="action_icon"
-                                  />
-                                </button>
-                                <button
-                                  class="action_button btn--transparent btn--circle"
-                                >
-                                  <img
-                                    src="./images/plus.svg"
-                                    alt=""
-                                    class="action_icon"
-                                  />
-                                </button>
-                                <button
-                                  class="action_button btn--transparent btn--circle"
-                                >
-                                  <img
-                                    src="./images/thumb.svg"
-                                    alt=""
-                                    class="action_icon icon_white"
-                                  />
-                                </button>
-                              </div>
-                              <button
-                                class="action_button btn--transparent btn--circle"
-                              >
-                                <img
-                                  src="./images/angleDown.svg"
-                                  alt=""
-                                  class="action_icon icon_white"
-                                />
-                              </button>
-                            </div>
-                            <div class="movie_labels">
-                              <span class="age_limit">18+</span>
-                              <div class="season_count">5 Saisons</div>
-                              <span class="quality_tag">HD</span>
-                            </div>
-
-                            <div class="movie_tags">
-                              <span>Violent</span>
-                              <span>Palpitant</span>
-                              <span>Action</span>
-                            </div>
-                            <div
-                              class="card__progress d-flex justify-content-between align-items-center"
-                            >
-                              <div class="progressbar">
-                                <div class="progressbar__status"></div>
-                              </div>
-                              <span class="fw-lighter text--light__gray small"
-                                >51 of 52m</span
-                              >
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+                  </div>
+                   <div class="slide">
+                    <div
+                      class="poster"
+                      data-title="Stranger Things"
+                      data-tags="16+ • 4 Saisons • HD • Sci-Fi • Horror • Mystery"
+                      data-progress="50"
+                      data-img="/images/p-5.webp"
+                    >
+                      <img src="./images/p-5.webp" alt="" class="img-fluid rounded-2"/>
                     </div>
-                    <div class="slide">
-                      <div class="wrapper">
-                        <div
-                          class="card custom__card card--rounded wrapper__front"
-                        >
-                          <div class="card__header">
-                            <img
-                              class="card__image"
-                              src="./images/p-3.webp"
-                              alt="snowpiercer series banner"
-                            />
-                          </div>
-                        </div>
-                        <div
-                          class="card custom__card card--rounded wrapper__back"
-                        >
-                          <div class="card__header">
-                            <img
-                              class="card__image"
-                              src="./images/p-3.webp"
-                              alt="snowpiercer series banner"
-                            />
-                          </div>
-                          <div class="card__body">
-                            <div
-                              class="d-flex justify-content-between align-items-center pb-3"
-                            >
-                              <div>
-                                <button
-                                  class="btn--circle play_btn"
-                                >
-                                  <img
-                                    src="./images/play.svg"
-                                    alt=""
-                                    class="action_icon"
-                                  />
-                                </button>
-                                <button
-                                  class="action_button btn--transparent btn--circle"
-                                >
-                                  <img
-                                    src="./images/plus.svg"
-                                    alt=""
-                                    class="action_icon"
-                                  />
-                                </button>
-                                <button
-                                  class="action_button btn--transparent btn--circle"
-                                >
-                                  <img
-                                    src="./images/thumb.svg"
-                                    alt=""
-                                    class="action_icon icon_white"
-                                  />
-                                </button>
-                              </div>
-                              <button
-                                class="action_button btn--transparent btn--circle"
-                              >
-                                <img
-                                  src="./images/angleDown.svg"
-                                  alt=""
-                                  class="action_icon icon_white"
-                                />
-                              </button>
-                            </div>
-                            <div class="movie_labels">
-                              <span class="age_limit">18+</span>
-                              <div class="season_count">5 Saisons</div>
-                              <span class="quality_tag">HD</span>
-                            </div>
-
-                            <div class="movie_tags">
-                              <span>Violent</span>
-                              <span>Palpitant</span>
-                              <span>Action</span>
-                            </div>
-                            <div
-                              class="card__progress d-flex justify-content-between align-items-center"
-                            >
-                              <div class="progressbar">
-                                <div class="progressbar__status"></div>
-                              </div>
-                              <span class="fw-lighter text--light__gray small"
-                                >51 of 52m</span
-                              >
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+                  </div>
+                   <div class="slide">
+                    <div
+                      class="poster"
+                      data-title="Stranger Things"
+                      data-tags="16+ • 4 Saisons • HD • Sci-Fi • Horror • Mystery"
+                      data-progress="50"
+                      data-img="/images/p-5.webp"
+                    >
+                      <img src="./images/p-5.webp" alt="" class="img-fluid rounded-2"/>
                     </div>
-                    <div class="slide">
-                      <div class="wrapper">
-                        <div
-                          class="card custom__card card--rounded wrapper__front"
-                        >
-                          <div class="card__header">
-                            <img
-                              class="card__image"
-                              src="./images/p-4.jpg"
-                              alt="snowpiercer series banner"
-                            />
-                          </div>
-                        </div>
-                        <div
-                          class="card custom__card card--rounded wrapper__back"
-                        >
-                          <div class="card__header">
-                            <img
-                              class="card__image"
-                              src="./images/p-4.jpg"
-                              alt="snowpiercer series banner"
-                            />
-                          </div>
-                          <div class="card__body">
-                            <div
-                              class="d-flex justify-content-between align-items-center pb-3"
-                            >
-                              <div>
-                                <button
-                                  class="btn--circle play_btn"
-                                >
-                                  <img
-                                    src="./images/play.svg"
-                                    alt=""
-                                    class="action_icon"
-                                  />
-                                </button>
-                                <button
-                                  class="action_button btn--transparent btn--circle"
-                                >
-                                  <img
-                                    src="./images/plus.svg"
-                                    alt=""
-                                    class="action_icon"
-                                  />
-                                </button>
-                                <button
-                                  class="action_button btn--transparent btn--circle"
-                                >
-                                  <img
-                                    src="./images/thumb.svg"
-                                    alt=""
-                                    class="action_icon icon_white"
-                                  />
-                                </button>
-                              </div>
-                              <button
-                                class="action_button btn--transparent btn--circle"
-                              >
-                                <img
-                                  src="./images/angleDown.svg"
-                                  alt=""
-                                  class="action_icon icon_white"
-                                />
-                              </button>
-                            </div>
-                            <div class="movie_labels">
-                              <span class="age_limit">18+</span>
-                              <div class="season_count">5 Saisons</div>
-                              <span class="quality_tag">HD</span>
-                            </div>
-
-                            <div class="movie_tags">
-                              <span>Violent</span>
-                              <span>Palpitant</span>
-                              <span>Action</span>
-                            </div>
-                            <div
-                              class="card__progress d-flex justify-content-between align-items-center"
-                            >
-                              <div class="progressbar">
-                                <div class="progressbar__status"></div>
-                              </div>
-                              <span class="fw-lighter text--light__gray small"
-                                >51 of 52m</span
-                              >
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+                  </div>
+                   <div class="slide">
+                    <div
+                      class="poster"
+                      data-title="Stranger Things"
+                      data-tags="16+ • 4 Saisons • HD • Sci-Fi • Horror • Mystery"
+                      data-progress="50"
+                      data-img="/images/p-5.webp"
+                    >
+                      <img src="./images/p-5.webp" alt="" class="img-fluid rounded-2"/>
                     </div>
-                    <div class="slide">
-                      <div class="wrapper">
-                        <div
-                          class="card custom__card card--rounded wrapper__front"
-                        >
-                          <div class="card__header">
-                            <img
-                              class="card__image"
-                              src="./images/p-5.webp"
-                              alt="snowpiercer series banner"
-                            />
-                          </div>
-                        </div>
-                        <div
-                          class="card custom__card card--rounded wrapper__back"
-                        >
-                          <div class="card__header">
-                            <img
-                              class="card__image"
-                              src="./images/p-5.webp"
-                              alt="snowpiercer series banner"
-                            />
-                          </div>
-                          <div class="card__body">
-                            <div
-                              class="d-flex justify-content-between align-items-center pb-3"
-                            >
-                              <div>
-                                <button
-                                  class="btn--circle play_btn"
-                                >
-                                  <img
-                                    src="./images/play.svg"
-                                    alt=""
-                                    class="action_icon"
-                                  />
-                                </button>
-                                <button
-                                  class="action_button btn--transparent btn--circle"
-                                >
-                                  <img
-                                    src="./images/plus.svg"
-                                    alt=""
-                                    class="action_icon"
-                                  />
-                                </button>
-                                <button
-                                  class="action_button btn--transparent btn--circle"
-                                >
-                                  <img
-                                    src="./images/thumb.svg"
-                                    alt=""
-                                    class="action_icon icon_white"
-                                  />
-                                </button>
-                              </div>
-                              <button
-                                class="action_button btn--transparent btn--circle"
-                              >
-                                <img
-                                  src="./images/angleDown.svg"
-                                  alt=""
-                                  class="action_icon icon_white"
-                                />
-                              </button>
-                            </div>
-                            <div class="movie_labels">
-                              <span class="age_limit">18+</span>
-                              <div class="season_count">5 Saisons</div>
-                              <span class="quality_tag">HD</span>
-                            </div>
-
-                            <div class="movie_tags">
-                              <span>Violent</span>
-                              <span>Palpitant</span>
-                              <span>Action</span>
-                            </div>
-                            <div
-                              class="card__progress d-flex justify-content-between align-items-center"
-                            >
-                              <div class="progressbar">
-                                <div class="progressbar__status"></div>
-                              </div>
-                              <span class="fw-lighter text--light__gray small"
-                                >51 of 52m</span
-                              >
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+                  </div>
+                   <div class="slide">
+                    <div
+                      class="poster"
+                      data-title="Stranger Things"
+                      data-tags="16+ • 4 Saisons • HD • Sci-Fi • Horror • Mystery"
+                      data-progress="50"
+                      data-img="/images/p-5.webp"
+                    >
+                      <img src="./images/p-5.webp" alt="" class="img-fluid rounded-2"/>
                     </div>
-                    <div class="slide">
-                      <div class="wrapper">
-                        <div
-                          class="card custom__card card--rounded wrapper__front"
-                        >
-                          <div class="card__header">
-                            <img
-                              class="card__image"
-                              src="./images/p-6.jpg"
-                              alt="snowpiercer series banner"
-                            />
-                          </div>
-                        </div>
-                        <div
-                          class="card custom__card card--rounded wrapper__back"
-                        >
-                          <div class="card__header">
-                            <img
-                              class="card__image"
-                              src="./images/p-6.jpg"
-                              alt="snowpiercer series banner"
-                            />
-                          </div>
-                          <div class="card__body">
-                            <div
-                              class="d-flex justify-content-between align-items-center pb-3"
-                            >
-                              <div>
-                                <button
-                                  class="btn--circle play_btn"
-                                >
-                                  <img
-                                    src="./images/play.svg"
-                                    alt=""
-                                    class="action_icon"
-                                  />
-                                </button>
-                                <button
-                                  class="action_button btn--transparent btn--circle"
-                                >
-                                  <img
-                                    src="./images/plus.svg"
-                                    alt=""
-                                    class="action_icon"
-                                  />
-                                </button>
-                                <button
-                                  class="action_button btn--transparent btn--circle"
-                                >
-                                  <img
-                                    src="./images/thumb.svg"
-                                    alt=""
-                                    class="action_icon icon_white"
-                                  />
-                                </button>
-                              </div>
-                              <button
-                                class="action_button btn--transparent btn--circle"
-                              >
-                                <img
-                                  src="./images/angleDown.svg"
-                                  alt=""
-                                  class="action_icon icon_white"
-                                />
-                              </button>
-                            </div>
-                            <div class="movie_labels">
-                              <span class="age_limit">18+</span>
-                              <div class="season_count">5 Saisons</div>
-                              <span class="quality_tag">HD</span>
-                            </div>
-
-                            <div class="movie_tags">
-                              <span>Violent</span>
-                              <span>Palpitant</span>
-                              <span>Action</span>
-                            </div>
-                            <div
-                              class="card__progress d-flex justify-content-between align-items-center"
-                            >
-                              <div class="progressbar">
-                                <div class="progressbar__status"></div>
-                              </div>
-                              <span class="fw-lighter text--light__gray small"
-                                >51 of 52m</span
-                              >
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+                  </div>
+                   <div class="slide">
+                    <div
+                      class="poster"
+                      data-title="Stranger Things"
+                      data-tags="16+ • 4 Saisons • HD • Sci-Fi • Horror • Mystery"
+                      data-progress="50"
+                      data-img="/images/p-5.webp"
+                    >
+                      <img src="./images/p-5.webp" alt="" class="img-fluid rounded-2"/>
                     </div>
-                    <div class="slide">
-                      <div class="wrapper">
-                        <div
-                          class="card custom__card card--rounded wrapper__front"
-                        >
-                          <div class="card__header">
-                            <img
-                              class="card__image"
-                              src="./images/p-7.jpg"
-                              alt="snowpiercer series banner"
-                            />
-                          </div>
-                        </div>
-                        <div
-                          class="card custom__card card--rounded wrapper__back"
-                        >
-                          <div class="card__header">
-                            <img
-                              class="card__image"
-                              src="./images/p-7.jpg"
-                              alt="snowpiercer series banner"
-                            />
-                          </div>
-                          <div class="card__body">
-                            <div
-                              class="d-flex justify-content-between align-items-center pb-3"
-                            >
-                              <div>
-                                <button
-                                  class="btn--circle play_btn"
-                                >
-                                  <img
-                                    src="./images/play.svg"
-                                    alt=""
-                                    class="action_icon"
-                                  />
-                                </button>
-                                <button
-                                  class="action_button btn--transparent btn--circle"
-                                >
-                                  <img
-                                    src="./images/plus.svg"
-                                    alt=""
-                                    class="action_icon"
-                                  />
-                                </button>
-                                <button
-                                  class="action_button btn--transparent btn--circle"
-                                >
-                                  <img
-                                    src="./images/thumb.svg"
-                                    alt=""
-                                    class="action_icon icon_white"
-                                  />
-                                </button>
-                              </div>
-                              <button
-                                class="action_button btn--transparent btn--circle"
-                              >
-                                <img
-                                  src="./images/angleDown.svg"
-                                  alt=""
-                                  class="action_icon icon_white"
-                                />
-                              </button>
-                            </div>
-                            <div class="movie_labels">
-                              <span class="age_limit">18+</span>
-                              <div class="season_count">5 Saisons</div>
-                              <span class="quality_tag">HD</span>
-                            </div>
-
-                            <div class="movie_tags">
-                              <span>Violent</span>
-                              <span>Palpitant</span>
-                              <span>Action</span>
-                            </div>
-                            <div
-                              class="card__progress d-flex justify-content-between align-items-center"
-                            >
-                              <div class="progressbar">
-                                <div class="progressbar__status"></div>
-                              </div>
-                              <span class="fw-lighter text--light__gray small"
-                                >51 of 52m</span
-                              >
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+                  </div>
+                   <div class="slide">
+                    <div
+                      class="poster"
+                      data-title="Stranger Things"
+                      data-tags="16+ • 4 Saisons • HD • Sci-Fi • Horror • Mystery"
+                      data-progress="50"
+                      data-img="/images/p-5.webp"
+                    >
+                      <img src="./images/p-5.webp" alt="" class="img-fluid rounded-2"/>
+                    </div>
+                  </div>
+                   <div class="slide">
+                    <div
+                      class="poster"
+                      data-title="Stranger Things"
+                      data-tags="16+ • 4 Saisons • HD • Sci-Fi • Horror • Mystery"
+                      data-progress="50"
+                      data-img="/images/p-5.webp"
+                    >
+                      <img src="./images/p-5.webp" alt="" class="img-fluid rounded-2"/>
+                    </div>
+                  </div>
+                   <div class="slide">
+                    <div
+                      class="poster"
+                      data-title="Stranger Things"
+                      data-tags="16+ • 4 Saisons • HD • Sci-Fi • Horror • Mystery"
+                      data-progress="50"
+                      data-img="/images/p-5.webp"
+                    >
+                      <img src="./images/p-5.webp" alt="" class="img-fluid rounded-2"/>
                     </div>
                   </div>
                 </div>
@@ -2766,8 +576,8 @@
             </div>
           </div>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
 
     <footer class="netflix_footer text-light pb-5">
       <div class="container">
@@ -2845,6 +655,443 @@
         <p class="small text-secondary mb-0">© 1997–2025 Netflix, Inc.</p>
       </div>
     </footer>
+
+    <div class="mini-modal" id="miniModal">
+      <div class="poster_image_box">
+        <img
+          id="modalImg"
+          class="poster_image"
+          src=""
+          alt="snowpiercer series banner"
+        />
+      </div>
+
+      <div class="custom__card rounded-3 wrapper__back">
+        <div class="card__body">
+          <!-- <div class="modal-title" id="modalTitle"></div> -->
+          <div class="d-flex justify-content-between align-items-center pb-3">
+            <div>
+              <button class="btn--circle play_btn">
+                <img src="./images/play.svg" alt="" class="action_icon" />
+              </button>
+              <button class="action_button btn--transparent btn--circle">
+                <img src="./images/plus.svg" alt="" class="action_icon" />
+              </button>
+              <button class="action_button btn--transparent btn--circle">
+                <img
+                  src="./images/thumb.svg"
+                  alt=""
+                  class="action_icon icon_white"
+                />
+              </button>
+            </div>
+            <button
+              class="action_button btn--transparent btn--circle"
+              data-bs-toggle="modal"
+              data-bs-target="#movieModal"
+            >
+              <img
+                src="./images/angleDown.svg"
+                alt=""
+                class="action_icon icon_white"
+              />
+            </button>
+          </div>
+          <div class="movie_labels">
+            <span class="age_limit">18+</span>
+            <div class="season_count">5 Saisons</div>
+            <span class="quality_tag">HD</span>
+          </div>
+
+          <div class="movie_tags">
+            <span>Violent</span>
+            <span>Palpitant</span>
+            <span>Action</span>
+          </div>
+          <div
+            class="card__progress d-flex justify-content-between align-items-center"
+          >
+            <div class="progressbar">
+              <div class="progressbar__status"></div>
+            </div>
+            <span class="fw-lighter text--light__gray small">51 of 52m</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="movieModal"
+      tabindex="-1"
+      data-bs-backdrop="static"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content custom_modal_content">
+          <div class="modal-body p-0">
+            <div class="modal_video_banner">
+              <button
+                type="button"
+                class="btn-close modal_close_btn"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+              <div class="ratio ratio-16x9">
+                <video
+                  class="modal_frame"
+                  src="./images/lAWxzDIsHe.mp4"
+                  playsinline=""
+                ></video>
+              </div>
+              <button
+                class="btn d-flex align-items-center gap-2 play_button btn--white"
+              >
+                <i class="fa fa-play" aria-hidden="true"></i>
+                <span class="ms-1">Lecture</span>
+              </button>
+            </div>
+            <div class="p-4 latest_move_wrapper">
+              <div class="move_detail_wrapper">
+                <div
+                  class="move_detail d-flex align-items-start justify-content-between flex-wrap"
+                >
+                  <div>
+                    <div class="title_time d-flex align-content-center gap-3">
+                      <span class="text_green fw-semibold">Nouveau </span
+                      ><span class="text-white-50 text_lightGray"
+                        >2025 1h 59min</span
+                      ><span class="move_result">HD</span>
+                    </div>
+                    <div class="text-white pt-3">
+                      <span>Nadaaniyan:</span><span> Les cœurs naïfs</span>
+                    </div>
+                  </div>
+                  <div class="actor_name_wrapper">
+                    <p class="casting text-white">
+                      <span class="label text-white-50 fw-light">Casting: </span
+                      >Aaliyah Qureishi, Agastya Shah, Apoorva Mukhija
+                    </p>
+                    <p class="genres text-white">
+                      <span class="label text-white-50 fw-light">Genres: </span
+                      >Drame, Comédie, Romance
+                    </p>
+                  </div>
+                </div>
+                <div class="desc_box">
+                  <p class="text-white fw-light">
+                    Lorsque ses amies se dressent contre elle à cause d'un
+                    malentendu, la jeune et fortunée Pia engage Arjun, un nouvel
+                    étudiant ambitieux, pour qu'il joue le rôle de son petit
+                    ami.
+                  </p>
+                </div>
+              </div>
+              <div class="similar_movies pt-5">
+                <h4 class="text-white fw-semibold">Similaire</h4>
+                <div class="row g-4">
+                  <div class="col-md-4">
+                    <div class="border-0 related_move_card">
+                      <div class="card-body related_move_cardBody p-0">
+                        <div class="related_image_box">
+                          <img
+                            class="poster_img"
+                            alt="Movie Poster"
+                            src="./images/slide-2.webp"
+                          />
+                          <div class="play_icon">
+                            <i class="fa fa-play" aria-hidden="true"></i>
+                          </div>
+                        </div>
+                        <div class="similar_move_detail_wrapper">
+                          <p class="text_green fw-semibold mb-1">61% Match</p>
+                          <p class="text-white">
+                            2025 <sup class="fs_12">HD</sup>
+                          </p>
+                          <div class="similar_move_desc">
+                            <p class="text-white">
+                              En pleine lutte pour la liberté en Inde en 1942,
+                              une jeune fille courageuse crée une station de
+                              radio clandestine pour diffuser le message
+                              d'unité, dé...
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="border-0 related_move_card">
+                      <div class="card-body related_move_cardBody p-0">
+                        <div class="related_image_box">
+                          <img
+                            class="poster_img"
+                            alt="Movie Poster"
+                            src="./images/slide-2.webp"
+                          />
+                          <div class="play_icon">
+                            <i class="fa fa-play" aria-hidden="true"></i>
+                          </div>
+                        </div>
+                        <div class="similar_move_detail_wrapper">
+                          <p class="text_green fw-semibold mb-1">62% Match</p>
+                          <p class="text-white">
+                            2025 <sup class="fs_12">HD</sup>
+                          </p>
+                          <div class="similar_move_desc">
+                            <p class="text-white">
+                              En pleine lutte pour la liberté en Inde en 1942,
+                              une jeune fille courageuse crée une station de
+                              radio clandestine pour diffuser le message
+                              d'unité, dé...
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="border-0 related_move_card">
+                      <div class="card-body related_move_cardBody p-0">
+                        <div class="related_image_box">
+                          <img
+                            class="poster_img"
+                            alt="Movie Poster"
+                            src="./images/slide-2.webp"
+                          />
+                          <div class="play_icon">
+                            <i class="fa fa-play" aria-hidden="true"></i>
+                          </div>
+                        </div>
+                        <div class="similar_move_detail_wrapper">
+                          <p class="text_green fw-semibold mb-1">63% Match</p>
+                          <p class="text-white">
+                            2025 <sup class="fs_12">HD</sup>
+                          </p>
+                          <div class="similar_move_desc">
+                            <p class="text-white">
+                              En pleine lutte pour la liberté en Inde en 1942,
+                              une jeune fille courageuse crée une station de
+                              radio clandestine pour diffuser le message
+                              d'unité, dé...
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="border-0 related_move_card">
+                      <div class="card-body related_move_cardBody p-0">
+                        <div class="related_image_box">
+                          <img
+                            class="poster_img"
+                            alt="Movie Poster"
+                            src="./images/slide-2.webp"
+                          />
+                          <div class="play_icon">
+                            <i class="fa fa-play" aria-hidden="true"></i>
+                          </div>
+                        </div>
+                        <div class="similar_move_detail_wrapper">
+                          <p class="text_green fw-semibold mb-1">64% Match</p>
+                          <p class="text-white">
+                            2025 <sup class="fs_12">HD</sup>
+                          </p>
+                          <div class="similar_move_desc">
+                            <p class="text-white">
+                              En pleine lutte pour la liberté en Inde en 1942,
+                              une jeune fille courageuse crée une station de
+                              radio clandestine pour diffuser le message
+                              d'unité, dé...
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="border-0 related_move_card">
+                      <div class="card-body related_move_cardBody p-0">
+                        <div class="related_image_box">
+                          <img
+                            class="poster_img"
+                            alt="Movie Poster"
+                            src="./images/slide-2.webp"
+                          />
+                          <div class="play_icon">
+                            <i class="fa fa-play" aria-hidden="true"></i>
+                          </div>
+                        </div>
+                        <div class="similar_move_detail_wrapper">
+                          <p class="text_green fw-semibold mb-1">65% Match</p>
+                          <p class="text-white">
+                            2025 <sup class="fs_12">HD</sup>
+                          </p>
+                          <div class="similar_move_desc">
+                            <p class="text-white">
+                              En pleine lutte pour la liberté en Inde en 1942,
+                              une jeune fille courageuse crée une station de
+                              radio clandestine pour diffuser le message
+                              d'unité, dé...
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="border-0 related_move_card">
+                      <div class="card-body related_move_cardBody p-0">
+                        <div class="related_image_box">
+                          <img
+                            class="poster_img"
+                            alt="Movie Poster"
+                            src="./images/slide-2.webp"
+                          />
+                          <div class="play_icon">
+                            <i class="fa fa-play" aria-hidden="true"></i>
+                          </div>
+                        </div>
+                        <div class="similar_move_detail_wrapper">
+                          <p class="text_green fw-semibold mb-1">66% Match</p>
+                          <p class="text-white">
+                            2025 <sup class="fs_12">HD</sup>
+                          </p>
+                          <div class="similar_move_desc">
+                            <p class="text-white">
+                              En pleine lutte pour la liberté en Inde en 1942,
+                              une jeune fille courageuse crée une station de
+                              radio clandestine pour diffuser le message
+                              d'unité, dé...
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="border-0 related_move_card">
+                      <div class="card-body related_move_cardBody p-0">
+                        <div class="related_image_box">
+                          <img
+                            class="poster_img"
+                            alt="Movie Poster"
+                            src="./images/slide-2.webp"
+                          />
+                          <div class="play_icon">
+                            <i class="fa fa-play" aria-hidden="true"></i>
+                          </div>
+                        </div>
+                        <div class="similar_move_detail_wrapper">
+                          <p class="text_green fw-semibold mb-1">67% Match</p>
+                          <p class="text-white">
+                            2025 <sup class="fs_12">HD</sup>
+                          </p>
+                          <div class="similar_move_desc">
+                            <p class="text-white">
+                              En pleine lutte pour la liberté en Inde en 1942,
+                              une jeune fille courageuse crée une station de
+                              radio clandestine pour diffuser le message
+                              d'unité, dé...
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="border-0 related_move_card">
+                      <div class="card-body related_move_cardBody p-0">
+                        <div class="related_image_box">
+                          <img
+                            class="poster_img"
+                            alt="Movie Poster"
+                            src="./images/slide-2.webp"
+                          />
+                          <div class="play_icon">
+                            <i class="fa fa-play" aria-hidden="true"></i>
+                          </div>
+                        </div>
+                        <div class="similar_move_detail_wrapper">
+                          <p class="text_green fw-semibold mb-1">68% Match</p>
+                          <p class="text-white">
+                            2025 <sup class="fs_12">HD</sup>
+                          </p>
+                          <div class="similar_move_desc">
+                            <p class="text-white">
+                              En pleine lutte pour la liberté en Inde en 1942,
+                              une jeune fille courageuse crée une station de
+                              radio clandestine pour diffuser le message
+                              d'unité, dé...
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="border-0 related_move_card">
+                      <div class="card-body related_move_cardBody p-0">
+                        <div class="related_image_box">
+                          <img
+                            class="poster_img"
+                            alt="Movie Poster"
+                            src="./images/slide-2.webp"
+                          />
+                          <div class="play_icon">
+                            <i class="fa fa-play" aria-hidden="true"></i>
+                          </div>
+                        </div>
+                        <div class="similar_move_detail_wrapper">
+                          <p class="text_green fw-semibold mb-1">69% Match</p>
+                          <p class="text-white">
+                            2025 <sup class="fs_12">HD</sup>
+                          </p>
+                          <div class="similar_move_desc">
+                            <p class="text-white">
+                              En pleine lutte pour la liberté en Inde en 1942,
+                              une jeune fille courageuse crée une station de
+                              radio clandestine pour diffuser le message
+                              d'unité, dé...
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="custom_footer p-4">
+              <hr class="opacity-1 text-white-50" />
+              <h4 class="text-white fw-bold pt-4">
+                À propos de Nadaaniyan: Les cœurs naïfs
+              </h4>
+              <p class="casting text-white">
+                <span class="label text-white-50 fw-light">Réalisateur: </span
+                >Shauna Gautam
+              </p>
+              <p class="casting text-white">
+                <span class="label text-white-50 fw-light">Casting: </span
+                >Aaliyah Qureishi, Agastya Shah, Apoorva Mukhija, Archana Puran
+                Singh, Barun Chanda, Dev Agasteya, Dia Mirza, Ibrahim Ali Khan,
+                Jugal Hansraj, Khushi Kapoor, Mahima Chaudhry, Meezaan Jafri,
+                Orry, Riya Sen, Suniel Shetty
+              </p>
+              <p class="casting text-white">
+                <span class="label text-white-50 fw-light"> Genres: </span
+                >Drame, Comédie, Romance
+              </p>
+              <p class="casting text-white">
+                <span class="label text-white-50 fw-light">Certification: </span
+                >TP
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script

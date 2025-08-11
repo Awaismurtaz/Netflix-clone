@@ -90,3 +90,9 @@
   .btn--circle {
     border-radius: 50%;
   }
+
+  @media(max-width:768px){
+    .custom_btn--lg {
+  padding: 9px 18px;
+}
+  }

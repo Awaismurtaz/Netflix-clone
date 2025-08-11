@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
+    <link rel="stylesheet" href="./style/main.css" />
+  </head>
+
+  <body>
+    <div class="setting_main_wrapper">
+      <header class="setting_navbar_wrapper">
+        <nav class="navbar custom_navbar navbar-expand-lg border-bottom">
+          <div class="container">
+            <a class="navbar-brand nav_logo_box" href="./index.html">
+              <img
+                src="./images/b-netflix-text.svg"
+                alt=""
+                class="landing__navbar__logo"
+              />
+            </a>
+
+            <div>
+              <a href="#" class="text-black fw-semibold logout_btn">
+                Se déconnecter
+              </a>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="setting_wrapper">
+        <div class="container">
+          <div class="setting_content_wrapper pt-5">
+            <div class="row align-items-start">
+              <div class="col-lg-4 col-md-12">
+                <div class="sidebar_menu_box">
+                  <ul class="list-unstyled sidebar_menu_wrapper">
+                    <li class="list-item">
+                      <span class="me-3">
+                        <i class="fa fa-arrow-left me-2" aria-hidden="true"></i>
+                      </span>
+                      <a href="./index.html" class="sidebar_link">
+                        Retour à Crunchycompte
+                      </a>
+                    </li>
+                    <li class="list-item mt-4 ">
+                      <span class="sidebar_icon">
+                        <i class="fa fa-home" aria-hidden="true"></i>
+                      </span>
+                      <a href="./account.html" class="sidebar_link"> Présentation </a>
+                    </li>
+                    <li class="list-item">
+                      <span class="sidebar_icon">
+                        <i class="fa fa-credit-card" aria-hidden="true"></i>
+                      </span>
+                      <a href="./pricing.html" class="sidebar_link"> Abonnement </a>
+                    </li>
+                    <li class="list-item active_item">
+                      <span class="sidebar_icon me-1">
+                        <i class="fa fa-shield" aria-hidden="true"></i>
+                      </span>
+                      <a href="./security.html" class="sidebar_link"> Sécurité </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-8 col-md-12">
+                <div class="content_box">
+                  <div class="heading_box">
+                    <h2 class="fw-bold text-black">Sécurité</h2>
+                  </div>
+                  <div class="list_box">
+                    <h6 class="text-black fw-normal py-3">Détails du compte</h6>
+                    <div class="card security_card p-2">
+                      <div class="card-body security_cardBody">
+                        <div class="card_list">
+                          <div
+                            class="d-flex align-items-center justify-content-between"
+                          >
+                            <h5 class="text-black">
+                              <i class="fa fa-lock me-3" aria-hidden="true"></i
+                              >Mot de passe
+                            </h5>
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                          </div>
+                        </div>
+                        <div class="card_list">
+                          <div
+                            class="d-flex align-items-center justify-content-between"
+                          >
+                            <div class="d-flex align-items-center">
+                              <i
+                                class="fa fa-envelope me-3"
+                                aria-hidden="true"
+                              ></i>
+                              <span>
+                                <h5 class="text-black mb-1">E-mail</h5>
+                                <span class="text-gray"
+                                  >example@gmail.com
+                                </span>
+                              </span>
+                            </div>
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="list_box pt-5">
+                    <h6 class="text-black fw-normal py-3">
+                      Accès et confidentialité
+                    </h6>
+                    <div class="card security_card p-2">
+                      <div class="card-body security_cardBody">
+                        <div class="card_list">
+                          <div
+                            class="d-flex align-items-center justify-content-between"
+                          >
+                            <div class="d-flex align-items-center">
+                              <i
+                                class="fa fa-desktop me-3"
+                                aria-hidden="true"
+                              ></i>
+                              <span>
+                                <h5 class="text-black mb-1">
+                                  Accès et appareils
+                                </h5>
+                                <span class="text-gray"
+                                  >Gérer les appareils connectés</span
+                                >
+                              </span>
+                            </div>
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+       <footer class="netflix_footer text-light py-5">
+      <div class="container">
+        <!-- Social Icons -->
+        <div class="d-flex gap-3 mb-4">
+          <a href="#" class="footer_icon"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="footer_icon"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="footer_icon"><i class="bi bi-youtube"></i></a>
+        </div>
+
+        <!-- Links -->
+        <div class="row mb-4">
+          <div class="col-6 col-md-3">
+            <ul class="list-unstyled">
+              <li class="footer_item">
+                <a href="#" class="footer_link">Audiodescription</a>
+              </li>
+              <li class="footer_item">
+                <a href="#" class="footer_link">Relations Investisseurs</a>
+              </li>
+              <li class="footer_item">
+                <a href="#" class="footer_link">Informations légales</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-3">
+            <ul class="list-unstyled">
+              <li class="footer_item">
+                <a href="#" class="footer_link">Centre d’aide</a>
+              </li>
+              <li class="footer_item">
+                <a href="#" class="footer_link">Recrutement</a>
+              </li>
+              <li class="footer_item">
+                <a href="#" class="footer_link">Préférences de cookies</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-3">
+            <ul class="list-unstyled">
+              <li class="footer_item">
+                <a href="#" class="footer_link">Cartes cadeaux</a>
+              </li>
+              <li class="footer_item">
+                <a href="#" class="footer_link">Conditions d’utilisation</a>
+              </li>
+              <li class="footer_item">
+                <a href="#" class="footer_link">Mentions légales</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-3">
+            <ul class="list-unstyled">
+              <li class="footer_item">
+                <a href="#" class="footer_link">Presse</a>
+              </li>
+              <li class="footer_item">
+                <a href="#" class="footer_link">Confidentialité</a>
+              </li>
+              <li class="footer_item">
+                <a href="#" class="footer_link">Nous contacter</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Service Code Button -->
+        <div class="mb-3">
+          <button class="btn btn-outline-light btn-sm footer_service_btn">
+            Code de service
+          </button>
+        </div>
+
+        <!-- Copyright -->
+        <p class="small text-secondary mb-0">© 1997–2025 Netflix, Inc.</p>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
