@@ -1,0 +1,28 @@
+<svg width="119" height="109" viewBox="0 0 119 109" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M80 78C101.539 78 119 60.5391 119 39C119 17.4609 101.539 0 80 0C58.4609 0 41 17.4609 41 39C41 60.5391 58.4609 78 80 78Z" fill="url(#paint0_radial_1551_599)"/>
+<path d="M0.168945 56.7197L79.9155 35.3516L93.8295 87.2797C93.8295 87.2797 72.6474 89.7446 53.1537 94.9679C33.6601 100.192 14.083 108.648 14.083 108.648L0.168945 56.7197Z" fill="url(#paint1_radial_1551_599)"/>
+<path d="M79.9155 35.3516L0.168945 56.7197L47.7448 74.7816L79.9155 35.3516Z" fill="url(#paint2_radial_1551_599)"/>
+<path d="M80 48C84.9706 48 89 43.9706 89 39C89 34.0294 84.9706 30 80 30C75.0294 30 71 34.0294 71 39C71 43.9706 75.0294 48 80 48Z" fill="url(#paint3_radial_1551_599)"/>
+<defs>
+<radialGradient id="paint0_radial_1551_599" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(80 39.2086) rotate(-90) scale(39.2086)">
+<stop stop-color="#FFCA45"/>
+<stop offset="0.327715" stop-color="#FF66D9" stop-opacity="0.36"/>
+<stop offset="1" stop-color="white" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="paint1_radial_1551_599" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(73.9994 51.4997) rotate(90) scale(68 68)">
+<stop stop-color="#FF661D"/>
+<stop offset="0.484375" stop-color="#A60A5E"/>
+<stop offset="1" stop-color="#7D2889"/>
+</radialGradient>
+<radialGradient id="paint2_radial_1551_599" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(79.4995 38.4997) rotate(140.43) scale(93.4037)">
+<stop stop-color="#FFBB8D" stop-opacity="0.56"/>
+<stop offset="0.333333" stop-color="#FF661D" stop-opacity="0.7"/>
+<stop offset="0.666667" stop-color="#D529AA"/>
+<stop offset="1" stop-color="#7D2889"/>
+</radialGradient>
+<radialGradient id="paint3_radial_1551_599" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(83 36.9998) rotate(90) scale(37 37)">
+<stop stop-color="#FFC9A5"/>
+<stop offset="1" stop-color="#E50A14"/>
+</radialGradient>
+</defs>
+</svg>

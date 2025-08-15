@@ -96,3 +96,34 @@
   padding: 9px 18px;
 }
   }
+
+      .btn--primary {
+      display: inline-block;
+      background-color: $red;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      padding: 0.8rem 1.5rem;
+      font-size: 1rem;
+      text-decoration: none;
+      width: 100%;
+      text-align: center;
+
+      &:hover {
+        background:rgba($red, 0.9);
+      }
+    }
+    .btn--secondary{
+      display: inline-block;
+      background-color: $gray-D9;
+      color: $black;
+      border: none;
+      border-radius: 4px;
+      padding: 0.8rem 1.5rem;
+      font-size: 1rem;
+      text-decoration: none;
+      width: 100%;
+      &:hover {
+        background: rgba($gray-D9, 0.8);
+      }
+    }

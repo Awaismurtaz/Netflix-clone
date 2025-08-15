@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Netflix</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css"
+    integrity="sha512-t7Few9xlddEmgd3oKZQahkNI4dS6l80+eGEzFQiqtyVYdvcSG2D3Iub77R20BdotfRPA9caaRkg1tyaJiPmO0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+  <link rel="stylesheet" href="./style/main.css" />
+</head>
+
+<body>
+  <header class="setting_navbar_wrapper">
+    <nav class="navbar custom_navbar navbar-expand-lg border-bottom">
+      <div class="container">
+        <a class="navbar-brand nav_logo_box" href="./index.html">
+          <img src="./images/b-netflix-text.svg" alt="" class="landing__navbar__logo" />
+        </a>
+
+        <div>
+          <a href="#" class="text-black fw-semibold logout_btn"> Sign in </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section>
+    <div class="selectPlan py-5">
+      <div class="container">
+        <p class="step_text">STEP 1 OF 3</p>
+        <h1 class="main_heading">Choose the plan that’s right for you</h1>
+        <div class="row g-4 ">
+          <div class="col-sm-12 col-md-6 col-lg-3">
+            <div class="card selectPlan__card">
+              <div class="card-body selectPlan__body">
+                <div class="selectPlan__header mobile_header">
+                  <h5>Mobile</h5>
+                  <p>480p</p>
+                  <div class="check_circle ">
+                    <i class="bi bi-check-circle-fill"></i>
+                  </div>
+                </div>
+                <div class="selectPlan__list p-3">
+                  <ul class="list-unstyled">
+                    <li class="select__list ">
+                      <p class="text-muted small mb-1 fw-medium">Monthly Price</p>
+                      <h6 class="list_price">Rs 250</h6>
+                    </li>
+                    <li class="select__list">
+                      <p class="text-muted small mb-1 fw-medium">Video and sound quality</p>
+                      <h6 class="list_price">Fair</h6>
+                    </li>
+                    <li class="select__list ">
+                      <p class="text-muted small mb-1 fw-medium">Resolution</p>
+                      <h6 class="list_price">480p</h6>
+                    </li>
+                    <li class="select__list">
+                      <p class="text-muted small mb-1 fw-medium">Supported devices</p>
+                      <h6 class="list_price">Mobile phone, tablet</h6>
+                    </li>
+                    <li class="select__list">
+                      <p class="text-muted small mb-1 fw-medium">Devices your household can watch at the same time</p>
+                      <h6 class="list_price">1</h6>
+                    </li>
+                    <li class="select__list">
+                      <p class="text-muted small mb-1 fw-medium">Download devices</p>
+                      <h6 class="list_price">1</h6>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-3">
+            <div class="card selectPlan__card">
+              <div class="card-body selectPlan__body">
+                <div class="selectPlan__header basic_header">
+                  <h5>Basic</h5>
+                  <p>720p</p>
+                  <div class="check_circle ">
+                    <i class="bi bi-check-circle-fill"></i>
+                  </div>
+                </div>
+                <div class="selectPlan__list p-3">
+                  <ul class="list-unstyled">
+                    <li class="select__list ">
+                      <p class="text-muted small mb-1 fw-medium">Monthly Price</p>
+                      <h6 class="list_price">Rs 450</h6>
+                    </li>
+                    <li class="select__list">
+                      <p class="text-muted small mb-1 fw-medium">Video and sound quality</p>
+                      <h6 class="list_price">Good</h6>
+                    </li>
+                    <li class="select__list ">
+                      <p class="text-muted small mb-1 fw-medium">Resolution</p>
+                      <h6 class="list_price">720p (HD)</h6>
+                    </li>
+                    <li class="select__list">
+                      <p class="text-muted small mb-1 fw-medium">Supported devices</p>
+                      <h6 class="list_price">TV, computer, mobile phone, tablet</h6>
+                    </li>
+                    <li class="select__list">
+                      <p class="text-muted small mb-1 fw-medium">Devices your household can watch at the same time</p>
+                      <h6 class="list_price">1</h6>
+                    </li>
+                    <li class="select__list">
+                      <p class="text-muted small mb-1 fw-medium">Download devices</p>
+                      <h6 class="list_price">1</h6>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-3">
+            <div class="card selectPlan__card">
+              <div class="card-body selectPlan__body">
+                <div class="selectPlan__header standard_header">
+                  <h5>Standard</h5>
+                  <p>1080p</p>
+                  <div class="check_circle ">
+                    <i class="bi bi-check-circle-fill"></i>
+                  </div>
+                </div>
+                <div class="selectPlan__list p-3">
+                  <ul class="list-unstyled">
+                    <li class="select__list ">
+                      <p class="text-muted small mb-1 fw-medium">Monthly Price</p>
+                      <h6 class="list_price">Rs 800</h6>
+                    </li>
+                    <li class="select__list">
+                      <p class="text-muted small mb-1 fw-medium">Video and sound quality</p>
+                      <h6 class="list_price">Great</h6>
+                    </li>
+                    <li class="select__list ">
+                      <p class="text-muted small mb-1 fw-medium">Resolution</p>
+                      <h6 class="list_price">1080p (Full HD)</h6>
+                    </li>
+                    <li class="select__list">
+                      <p class="text-muted small mb-1 fw-medium">Supported devices</p>
+                      <h6 class="list_price">TV, computer, mobile phone, tablet</h6>
+                    </li>
+                    <li class="select__list">
+                      <p class="text-muted small mb-1 fw-medium">Devices your household can watch at the same time</p>
+                      <h6 class="list_price">2</h6>
+                    </li>
+                    <li class="select__list">
+                      <p class="text-muted small mb-1 fw-medium">Download devices</p>
+                      <h6 class="list_price">2</h6>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-3">
+            <div class="card selectPlan__card label_card border-top-0 rounded-top-0">
+              <div class="popular_packege text-center ">
+                <span class="small">Most Popular</span>
+              </div>
+              <div class="card-body selectPlan__body ">
+                <div class="selectPlan__header premium_header">
+                  <h5>Premium</h5>
+                  <p>4K + HDR</p>
+                  <div class="check_circle ">
+                    <i class="bi bi-check-circle-fill"></i>
+                  </div>
+                </div>
+                <div class="selectPlan__list p-3">
+                  <ul class="list-unstyled">
+                    <li class="select__list ">
+                      <p class="text-muted small mb-1 fw-medium">Monthly Price</p>
+                      <h6 class="list_price">Rs 1,100</h6>
+                    </li>
+                    <li class="select__list">
+                      <p class="text-muted small mb-1 fw-medium">Video and sound quality</p>
+                      <h6 class="list_price">Best</h6>
+                    </li>
+                    <li class="select__list ">
+                      <p class="text-muted small mb-1 fw-medium">Resolution</p>
+                      <h6 class="list_price">4K (Ultra HD) + HDR</h6>
+                    </li>
+                    <li class="select__list">
+                      <p class="text-muted small mb-1 fw-medium">Spatial audio (immersive sound)</p>
+                      <h6 class="list_price">Included</h6>
+                    </li>
+                    <li class="select__list">
+                      <p class="text-muted small mb-1 fw-medium">Supported devices</p>
+                      <h6 class="list_price">TV, computer, mobile phone, tablet</h6>
+                    </li>
+                    <li class="select__list">
+                      <p class="text-muted small mb-1 fw-medium">Devices your household can watch at the same time</p>
+                      <h6 class="list_price">4</h6>
+                    </li>
+                    <li class="select__list">
+                      <p class="text-muted small mb-1 fw-medium">Download devices</p>
+                      <h6 class="list_price">6</h6>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="detail_description py-3">
+          <p class="small text-muted">
+            HD (720p), Full HD (1080p), Ultra HD (4K) and HDR availability subject to your internet service and device
+            capabilities. Not all content is available in all resolutions. See our Terms of Use for <a href="#"> more details.</a> <br>
+            Only people who live with you may use your account. Watch on 4 different devices at the same time with
+            Premium, 2 with Standard, and 1 with Basic and Mobile. <br>
+            Live events are included with any Netflix plan and contain ads.
+          </p>
+
+          <div class="button_box pt-5 ">
+            <a href="#" type="button" class="btn--primary mb-3">Next</a>
+          </div>
+        </div>
+      </div>
+      </main>
+  </section>
+
+  <footer class="netflix_footer text-light pt-5 pb-4 bg--grayF3">
+    <div class="container">
+      <!-- Links -->
+      <ul class="list-unstyled m-0">
+        <li class="footer_item">
+          <a href="#" class="footer_link">Questions? Contact us.</a>
+        </li>
+      </ul>
+      <div class="row">
+        <div class="col-6 col-md-3">
+          <ul class="list-unstyled">
+            <li class="footer_item">
+              <a href="#" class="footer_link">FAQ</a>
+            </li>
+            <li class="footer_item">
+              <a href="#" class="footer_link">Cookie Pratatences</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-3">
+          <ul class="list-unstyled">
+            <li class="footer_item">
+              <a href="#" class="footer_link">Help Center</a>
+            </li>
+            <li class="footer_item">
+              <a href="#" class="footer_link">Corporate Information</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-3">
+          <ul class="list-unstyled">
+            <li class="footer_item">
+              <a href="#" class="footer_link">Term Use</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-3">
+          <ul class="list-unstyled">
+            <li class="footer_item">
+              <a href="#" class="footer_link">Privacy</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+
+</html>

@@ -1,78 +1,82 @@
+const miniModal = $("#miniModal");
+let modalVisible = false;
+let hoverTimeout;
 
-  const miniModal = $("#miniModal");
-  let modalVisible = false;
+// Function to show modal
+function showModal(currentPoster) {
+  const title = currentPoster.data("title");
+  const tags = currentPoster.data("tags");
+  const img = currentPoster.data("img");
+  const progress = currentPoster.data("progress");
 
-  $(".poster").on("mouseenter", function () {
-    const currentPoster = $(this);
-    const title = currentPoster.data("title");
-    const tags = currentPoster.data("tags");
-    const img = currentPoster.data("img");
-    const progress = currentPoster.data("progress");
+  $("#modalTitle").text(title);
+  $("#modalTags").text(tags);
+  $("#modalImg").attr("src", img);
+  $("#modalProgress").css("width", progress + "%");
 
-    // Update modal content
-    $("#modalTitle").text(title);
-    $("#modalTags").text(tags);
-    $("#modalImg").attr("src", img);
-    $("#modalProgress").css("width", progress + "%");
+  miniModal.addClass("delayed");
 
-    // Always apply the delayed class for animation
-    miniModal.addClass("delayed");
+  const offset = currentPoster.offset();
+  const posterWidth = currentPoster.outerWidth();
+  const posterHeight = currentPoster.outerHeight();
+  const modalWidth = miniModal.outerWidth();
+  const modalHeight = miniModal.outerHeight();
 
-    // Show modal invisibly to get size
-    miniModal
-      .css({
-        opacity: 0,
-        transform: "scale(1) translateY(0)",
-        pointerEvents: "none",
-        display: "block",
-        top: 0,
-        left: 0,
-        position: "absolute",
-      })
-      .addClass("show");
+  const modalLeft = offset.left + (posterWidth - modalWidth) / 2;
+  const modalTop = offset.top + (posterHeight - modalHeight) / 2;
 
-    const offset = currentPoster.offset();
-    const posterWidth = currentPoster.outerWidth();
-    const posterHeight = currentPoster.outerHeight();
-    const modalWidth = miniModal.outerWidth();
-    const modalHeight = miniModal.outerHeight();
-
-    const modalLeft = offset.left + (posterWidth - modalWidth) / 2;
-    const modalTop = offset.top + (posterHeight - modalHeight) / 2;
-
-    miniModal.css({
-      top: modalTop + "px",
-      left: modalLeft + "px",
-      opacity: 1,
-      pointerEvents: "auto",
-    });
-
-    modalVisible = true;
+  miniModal.css({
+    top: modalTop + "px",
+    left: modalLeft + "px",
   });
 
-  $(".poster-carousel, #miniModal").on("mouseleave", function () {
-    setTimeout(() => {
-      if (!$(".poster-carousel:hover").length && !$("#miniModal:hover").length) {
-        miniModal.removeClass("show delayed").css("display", "none");
-        modalVisible = false;
-      }
-    }, 150);
-  });
+  miniModal.addClass("show");
+  modalVisible = true;
+}
 
-  miniModal.on("mouseenter", function () {
-    modalVisible = true;
-    miniModal.addClass("show").css("display", "block");
-  });
+// Hover enter
+$(".poster").on("mouseenter", function () {
+  const currentPoster = $(this);
 
-  miniModal.on("mouseleave", function () {
-    setTimeout(() => {
-      if (!$(".poster-carousel:hover").length && !$("#miniModal:hover").length) {
-        miniModal.removeClass("show delayed").css("display", "none");
-        modalVisible = false;
-      }
-    }, 500);
-  });
+  clearTimeout(hoverTimeout);
 
+  if (modalVisible) {
+    // First hide the old modal
+    miniModal.removeClass("show delayed");
+    modalVisible = false;
+
+    // Wait for the hide transition to finish, then show new one
+    hoverTimeout = setTimeout(() => {
+      showModal(currentPoster);
+    }, 300); // matches your CSS transition time
+  } else {
+    showModal(currentPoster);
+  }
+});
+
+// Hover leave
+$(".poster-carousel, #miniModal").on("mouseleave", function () {
+  setTimeout(() => {
+    if (!$(".poster-carousel:hover").length && !$("#miniModal:hover").length) {
+      miniModal.removeClass("show delayed");
+      modalVisible = false;
+    }
+  }, 150);
+});
+
+miniModal.on("mouseenter", function () {
+  modalVisible = true;
+  miniModal.addClass("show");
+});
+
+miniModal.on("mouseleave", function () {
+  setTimeout(() => {
+    if (!$(".poster-carousel:hover").length && !$("#miniModal:hover").length) {
+      miniModal.removeClass("show delayed");
+      modalVisible = false;
+    }
+  }, 500);
+});
 
 
 
@@ -102,7 +106,7 @@ $(".movies__slider").slick({
   centerMode: true,
   centerPadding: "50px",
   slidesToShow: 6,
-  slidesToScroll: 2, // default desktop scroll
+  slidesToScroll: 2,
   arrows: true,
   dots: true,
   prevArrow:
@@ -144,8 +148,6 @@ $(".movies__slider").slick({
     },
   ],
 });
-
-
 
 const header = document.querySelector(".site-header");
 

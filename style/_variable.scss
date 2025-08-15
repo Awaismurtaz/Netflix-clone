@@ -10,7 +10,10 @@ $black-14:#141414;
 $gray-e5:#e5e5e5;
 $gray-b3:#b3b3b3;
 $gray-44:#444;
-
+$gray-33:#333;
+$gray-cc:#ccc;
+$gray-f3:#F3F3F3;
+$gray-D9:#D9D9D9;
 
 .fs_64{
     font-size: clamp(38px, 5vw, 64px);
@@ -21,17 +24,30 @@ $gray-44:#444;
 .fs_18{
     font-size:clamp(12px, 4vw, 18px);
 }
+
 .text_green,
 .text--light__gray{
     color: $light-gray;
 }
 
-
 .bg--black{
 background-color: $black;
 }
+
+.bg--black14{
+    background: $black-14;
+}
+
+.bg--grayF3{
+    background: $gray-f3;
+}
+
 .bg--light__black{
     background-color: $light-black
+}
+
+.text--black14{
+    color: $black-14;
 }
 .action_icon{
 width: clamp(14px, 5vw, 20px);
